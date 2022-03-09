@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <style type="text/css">
+            /*
+            清除标签默认样式：标签会自带一些属性，需要对这些属性进行清零或者初始化
+            */
+            /*第一种：星号是通配符，表示所有的html标签*/
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            /*第二种：将用到的标签进行初始化，提高执行效率*/
+            body,h1,ul,dl,p{
+                margin: 0;
+                padding: 0;
+            }
+            .box{
+                width: 100px;
+                height: 100px;
+                background: red;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box"></div>
+        <h1>标题</h1>
+        <ul>
+            <li>列表</li>
+            <li>列表</li>
+            <li>列表</li>
+        </ul>
+        <dl>
+            <dt>列表标题</dt>
+            <dd>2222</dd>
+        </dl>
+        <p>段落</p>
+    </body>
+</html>

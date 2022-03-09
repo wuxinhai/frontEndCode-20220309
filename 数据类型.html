@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <p id="pTypeof"></p>
+        <p id="pInstanceof"></p>
+        <script>
+            document.getElementById("pTypeof").innerHTML = 
+            "typeof \"test string\"->" + typeof "test string" + "<br>" +
+            "typeof 1234567->" + typeof 1234567 + "<br>" + 
+            "typeof NaN->" + typeof NaN + "<br>" +
+            "typeof true->" + typeof true + "<br>" +
+            "typeof [1,2,3,4]->" + typeof [1,2,3,4] +"<br>" +
+            "typeof {name:'jack ma',sex:'女',age:50}->"+typeof {name:'jack ma',sex:'女',age:50} + "<br>" +
+            "typeof new Date()->" + typeof new Date() + "<br>" +
+            "typeof function() {}->" + typeof function() {} + "<br>" +
+            "typeof abc->" + typeof abc + "<br>" +
+            "typeof null->" + typeof null;
+            
+            var Animal = function(){
+                type:"dog";
+                name:"旺财";
+            };
+            var animal = new Animal();
+            console.log((animal instanceof Animal))
+        </script>
+    </body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <style type="text/css">
+            *{
+                margin: 0;
+                padding: 0;
+                /*去掉小圆点*/
+                list-style: none;
+            }
+            .box{
+                width: 238px;
+                height: 212px;
+                margin: 100px auto 0;
+                border-top: 3px solid #FF8500;
+                border: 1px solid #D9E0EE;    
+            }
+            .box h3{ 
+                border-bottom: 1px solid #D9E0EE;
+                height: 35px;
+                font-size: 16px;
+                line-height: 35px;
+                font-weight: 400;
+            }
+            .box h3 a{
+                 font-family: "Microsoft YaHei", "微软雅黑", "SimHei", "黑体";
+                 text-decoration: none;
+                 color: #000000;
+                 margin-left: 12px;
+            }
+            .box h3 a:hover{
+                color: #FF8500;
+            }
+            .box .banner{
+                width: 180px;
+                height: 108px;
+                margin: 7px auto 0;
+            }
+
+            .box .banner a {
+				display: block;
+				height: 108px;
+				background: yellow;
+				text-decoration: none;
+				color: yellowgreen;
+			}
+
+            .box .banner a span{
+                display: block;
+                height: 21px;
+                color: #FFFFFF;
+                text-align: center;
+                background: #000000;
+                text-decoration: none;
+                font-size: 14px;
+            }
+            /*鼠标移入a时，让后代的span*/
+            .box .banner a:hover span{
+                color: #FF8500;
+            }
+            .box .banner a img{
+                display: block;
+            }
+            .box .list{
+                margin-top: 10px;
+            }
+            .box .list li{
+                line-height: 24px;
+                height: 24px;
+                font-size: 12px;
+                background: url(./img/dian.png) no-repeat 9px center;
+            }
+            .box .list li a{
+                color: #666666;
+                text-decoration: none;
+                padding-left: 19px;
+            }
+            .box .list li a:hover{
+                color: #FF8500;
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box">
+            <h3>
+                <a href="##">图片博客</a>
+            </h3>
+            <div class="banner">
+                <a href="##">
+                    <img src="./img/banner.jpg">
+                    <span>杨幂和魏大勋分手</span>
+                </a>
+            </div>
+            <ul class="list">
+                <li>
+                    <a href="##">高考15分爸爸教四岁女儿学数学</a>
+                </li>
+                <li>
+                    <a href="##">优秀应届生都去了什么行业?</a>
+                </li>
+            </ul>
+        </div>
+    </body>
+</html>

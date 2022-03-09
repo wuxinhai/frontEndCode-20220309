@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <style type="text/css">
+            .box{
+                text-align: center;
+                background: pink;
+                line-height: 30px;
+            }
+            .box a{
+                color: green;
+                height: 30px;
+                width: 100px;
+                background: url(timg_03.png) no-repeat 0 0;
+                /*转换成行内块*/
+                display: inline-block;
+                /*继承与box*/
+                /* text-align: center; */
+                text-decoration: none;
+            }
+            /*鼠标移入时状态*/
+            .box a:hover{
+                background: url(timg_07.png);
+                color: red;
+                text-decoration:underline ;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box">
+            <a href="##">导航</a>
+            <a href="##">导航</a>
+            <a href="##">导航</a>
+            <a href="##">导航</a>
+            <a href="##">导航</a>
+        </div>
+    </body>
+</html>

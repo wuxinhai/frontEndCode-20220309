@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>数据类型</title>
+        <meta charset="utf-8">
+        <script type="text/javascript">
+            /*加载数据函数，在页面加载时进行处理（此时HTML元素已经加载完成）*/
+            window.onload = function loadData(){
+                //typeof，分别通过不同的typeof设置HTML标签内容
+                document.getElementById("spnString").innerText = typeof "test string";
+                document.getElementById("spnNumber").innerText = typeof 1234567;
+                document.getElementById("spnNaN").innerText = typeof NaN;
+                document.getElementById("spnBoolean").innerText = typeof true;
+                document.getElementById("spnArray").innerText = typeof [1,2,3,4];
+                document.getElementById("spnObject").innerText = typeof {name:'jack ma', sex:'女',age:50};
+                document.getElementById("spnDate").innerText = typeof new Date();
+                document.getElementById("spnFunction").innerText = typeof function(){};
+                document.getElementById("spnUndefined").innerText = typeof abc;
+                document.getElementById("spnNull").innerText = typeof null;
+                //instanceof 是否为指定对象
+                //console.log 方法是在浏览器控制台输入日志信息
+                var Animal = function(){
+                    type:"dog";
+                    name:"旺财";
+                };
+                var animal = new Animal();
+                console.log((animal instanceof Animal));
+                var obj = new Object();
+                console.log((obj instanceof Animal));
+                console.log([1,2,3,4] instanceof Array);
+            }
+        </script>
+    </head>
+    <body>
+        <div>
+            typeof "test string"-----<span id="spnString"></span>
+        </div>
+        <div>
+            typeof 1234567------<span id="spnNumber"></span>
+        </div>
+        <div>
+            typeof NaN-----<span id="spnNaN"></span>
+        </div>
+        <div>
+            typeof true-----<span id="spnBoolean"></span>
+        </div>
+        <div>
+            typeof [1,2,3,4]-----<span id="spnArray"></span>
+        </div>
+        <div>
+            typeof {name:'jack ma', sex:'女',age:50}----<span id="spnObject"></span>
+        </div>
+        <div>
+            typeof new Date()-----<span id="spnDate"></span>
+        </div>
+        <div>
+            typeof function()-----<span id="spnFunction"></span>
+        </div>
+        <div>
+            typeof abc----<span id="spnUndefined"></span>
+        </div>
+        <div>
+            typeof null-----<span id="spnNull"></span>
+        </div>
+    </body>
+</html>

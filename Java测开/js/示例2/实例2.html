@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>字符串与运算符</title>
+        <meta charset="utf-8">
+        <script type="text/javascript">
+            function loadData(){
+                //字符串函数
+                var OriginalString = " There is a flower in the \'tree\".\\    ";
+                var trimString = OriginalString.trim();
+                var indexOfString = OriginalString.indexOf("er");
+                var splitString = OriginalString.split(" ");
+                var replaceString = OriginalString.replace(" ","-");
+                var replaceAllString = OriginalString.replaceAll(" ","-")
+                var substrString = OriginalString.substr(4,5);
+                var toLowerCaseString = OriginalString.toLocaleLowerCase();
+                var toUpperCaseString = OriginalString.toLocaleUpperCase();
+                //设置值
+                document.getElementById("spnOriginal").innerText = OriginalString + "(长度:" + OriginalString.length + ")";
+                document.getElementById("spnTrim").innerText = trimString;
+                document.getElementById("spnIndexOf").innerText = indexOfString;
+                document.getElementById("spnSplit").innerText = splitString;
+                document.getElementById("spnReplace").innerText = replaceString;
+                document.getElementById("spnReplaceAll").innerText = replaceAllString;
+                document.getElementById("spnSubstr").innerText = substrString;
+                document.getElementById("spnToLowerCase").innerText = toLowerCaseString;
+                document.getElementById("spnToUpperCase").innerText = toUpperCaseString;
+
+                document.getElementById("spnEquals").innerText = ("3"==3);
+                document.getElementById("spnFullEquals").innerText = ("3"===3);
+                document.getElementById("spnNotEquals").innerText = ("4"!=4);
+                document.getElementById("spnFullNotEquals").innerText = ("4"!==4);
+            }
+        </script>
+    </head>
+    <body onload="loadData()">
+        原始串:<span id="spnOriginal" style="background-color: greenyellow;"></span><br>
+        trim值:<span id="spnTrim" style="background-color: greenyellow;"></span><br>
+        indexof("er")值:<span id="spnIndexOf" style="background-color: lawngreen;"></span><br>
+        split(" ")值:<span id="spnSplit" style="background-color: lawngreen;"></span><br>
+        replace(" ","-")值:<span id="spnReplace" style="background-color: lightpink;"></span><br>
+        replaceAll(" ","-")值:<span id="spnReplaceAll" style="background-color: lightsalmon;"></span><br>
+        substr(4,5)值:<span id="spnSubstr" style="background-color: lightsalmon;"></span><br>
+        toLowerCase值:<span id="spnToLowerCase" style="background-color: seagreen;"></span><br>
+        toUpperCase值:<span id="spnToUpperCase" style="background-color: seagreen;"></span><br>
+        <hr>
+        "3"==3?<span id="spnEquals"></span><br>
+        "3"===3?<span id="spnFullEquals"></span><br>
+        "4"!=4?<span id="spnNotEquals"></span><br>
+        "4"!==4?<span id="spnFullNotEquals"></span><br>
+    </body>
+</html>

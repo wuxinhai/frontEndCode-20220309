@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <body>
+        <!--
+            表单标签:
+            label   标题
+                属性：
+                    for 关联表单中的id值
+            input
+                属性:
+                    type
+                        text 输入框
+                        password 密码框
+                        radio 单选按钮
+                            属性:
+                            name 是组的概念，将多个单选的name设置相同的名称，实现单选效果
+                            checked 默认选中
+                        checkbox 复选框
+                            checked 默认选中
+                        button 普通按钮
+                        submit 提交按钮
+                        reset  重置按钮
+            select 下拉菜单
+                标签
+                    option 下拉项
+                    optgroup 下拉组
+                        属性
+                            label 下拉组标题
+                属性
+                    selected 默认选中 三种写法和checked一样
+            textarea 文本域
+            form 提交表单  将所有被提交的标签包含到其中
+                属性
+                    action 提交地址
+                    method 提交方式  get/post
+            button 按钮
+                属性
+                        button 普通按钮
+                        submit(默认值) 提交按钮
+                        reset  重置按钮
+        -->
+        <form action="http://www.baidu.com" method="get">
+            <label for="txt1">姓名:</label>
+            <input type="text" id="txt1">
+            <br><br/>
+            <label for="txt2">密码:</label>
+            <input type="password" id="txt2"/>
+            <br><br/>
+            性别:<input type="radio" name="gender" id="male" checked><label for="male">男</label>
+                 <input type="radio" name="gender" id="female"><label for="female">女</label>
+            <br><br/>
+            学历:<input type="radio" name="edu">本科
+                 <input type="radio" name="edu">小学
+                 <input type="radio" name="edu">幼儿园
+            <br><br/>
+            您的国籍是:
+            <select>
+                <option  selected="selected">中国</option>
+                <option>韩国</option>
+                <option>泰国</option>
+                <option>日本</option>
+            </select>
+            <br><br/>
+            <select>
+                <optgroup label="亚洲">
+                    <option  selected="selected">中国</option>
+                    <option>韩国</option>
+                    <option>泰国</option>
+                    <option>日本</option>
+                </optgroup>
+                <optgroup label="欧洲">
+                    <option>法国</option>
+                    <option>英国</option>
+                    <option>德国</option>
+                    <option>意大利</option>
+                </optgroup>
+            </select>
+            <br><br/>
+            您的兴趣爱好是:
+            <input type="checkbox" id="smoking" checked><label for="smoking">抽烟</label>
+            <input type="checkbox">喝酒
+            <input type="checkbox">烫头
+            <br><br/>
+            公司简介:
+            <br><br/>
+            <textarea></textarea>
+            <br><br/>
+            <input type="button" value="按钮">
+            <input type="submit" value="提交">
+            <input type="reset" value="重置">
+        </form>
+    </body>
+</html>

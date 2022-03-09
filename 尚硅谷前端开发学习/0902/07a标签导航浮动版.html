@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <style type="text/css">
+            /*
+            seo搜索引擎优化，如果将多个a标签堆积在一起，搜索引擎会认为是在作弊。
+
+            浮动元素不在具备之前的显示模式，在不色之宽高时，是由内容决定的。
+
+            浮动元素当父元素的宽度不够时，会自动换行。
+            */
+
+            *{
+                margin: 0;
+                padding: 0;
+                list-style: none;
+            }
+            .box{
+                background: pink;
+            }
+
+            .box ul{
+                width: 550px;
+                margin: 0 auto;
+                border: 1px solid blue;
+            }
+            .box ul li{
+                float: left;
+                margin-right: 10px;
+                /* margin-top: 10px; */
+            }
+            .box ul li a{
+                width: 100px;
+                height: 30px;
+                background: yellow;
+                display: block;
+                text-align: center;
+                line-height: 30px;
+                text-decoration: none;
+            }
+            .box ul li a:hover{
+                background: yellowgreen;
+                color: red;
+            }
+            .clearFix::after{
+                content: "";
+                display: block;
+                clear: both;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="box">
+            <ul class="clearFix">
+                <li>
+                    <a href="##">导航</a>
+                </li>
+                <li>
+                    <a href="##">导航</a>
+                </li>
+                <li>
+                    <a href="##">导航</a>
+                </li>
+                <li>
+                    <a href="##">导航</a>
+                </li>
+                <li>
+                    <a href="##">导航</a>
+                </li>
+            </ul>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>常用样式</title>
+        <meta charset="utf-8">
+        <style type="text/css">
+        /*背景颜色*/
+        .bg-color{
+            background-color: green;
+            width: 200px;
+            height: 200px;
+        }
+        /*背景图片，图片铺满标签所占像素*/
+        .bg-image{
+            background-image: url(./images/lemon.png);
+            width: 200px;
+            height: 200px;
+            border: 3px solid yellowgreen;
+        }
+        /*背景图片，显示原图*/
+        .bg-no-repeat{
+            background-image: url(./images/lemon.png);
+            width: 200px;
+            height: 200px;
+            border: 3px solid yellowgreen;
+            background-repeat: no-repeat;
+        }
+        /*随着页面的滚动轴背景图片将移动*/
+        .bg-attachment-scroll{
+            background-attachment: scroll;
+            background-image: url(./images/lemon.png);
+            width: 200px;
+            height: 200px;
+            border: 3px solid yellow;
+            background-repeat: no-repeat;
+            overflow: scroll;
+        }
+        /*随着页面的滚动轴背景图片将移动*/
+        .bg-attachment-fixed{
+            background-attachment: fixed;
+            background-image: url(./images/lemon.png);
+            width: 200px;
+            height: 200px;
+            border: 3px solid yellowgreen;
+            background-repeat: no-repeat;
+            overflow: scroll;
+        }
+        /*背景图会随内容的滚动而滚动*/
+        .bg-attachment-local{
+            background-attachment: local;
+            background-image: url(./images/lemon.png);
+            width: 200px;
+            height: 200px;
+            border: 3px solid yellowgreen;
+            background-repeat: no-repeat;
+            overflow: scroll;
+        }
+        /*设置背景图的位置*/
+        .bg-position{
+            background-position: bottom right;
+            background-image: url(./images/lemon.png);
+            width: 200px;
+            height: 200px;
+            border: 3px solid yellowgreen;
+            background-repeat: no-repeat;
+        }
+        /*设置背景图*/
+        .bg-short{
+            width: 200px;
+            height: 200px;
+            background: green url(./images/lemon.png) no-repeat right top;
+        }
+        /*链接*/
+        /*未访问的链接*/
+        a:link{
+            color: red;
+        }
+        /*已访问的链接*/
+        a:visited{
+            color: green;
+        }
+        /*鼠标悬停链接*/
+        a:hover{
+            color: yellowgreen;
+            /*没有下划线*/
+            text-decoration: none;
+        }
+        /*已选择的链接*/
+        a:active{
+            color: black;
+        }
+        </style>
+    </head>
+    <body>
+        <h1>颜色示例</h1>
+        <h5 style="color: rgb(255, 255, 0);">rgb颜色示例</h5>
+        <h5 style="color: #ff00ff;">HEX颜色示例</h5>
+        <h5 style="color: lightgreen;">常用颜色示例</h5>
+        <hr>
+        <h1>边框示例</h1>
+        <div style="width: 200px; height: 150px; border: 5px solid red;border-radius: 25px;outline: 5px dashed blue;">
+            dotted - 定义点线边框<br />
+            dashed - 定义虚线边框<br />
+            solid - 定义实线边框<br />
+            double - 定义双边框<br />
+            radius:圆角<br/>
+            ......
+        </div>
+        <hr>
+        <h1>背景background示例</h1>
+        <div class="bg-color">background-color</div>
+        <div class="bg-image">background-image-repeat</div>
+        <div class="bg-no-repeat">background-image-no-repeat</div>
+        <div class="bg-attachment-scroll">
+            <div style="width: 300px;">
+                background-attachment-scroll
+            </div>
+            <div style="width: 300px;">
+                background-attachment-scroll
+            </div>
+            <div style="width: 300px;">
+                background-attachment-scroll
+            </div>
+            <div style="width: 300px;">
+                background-attachment-scroll
+            </div>
+            <div style="width: 300px;">
+                background-attachment-scroll
+            </div>
+            <div style="width: 300px;">
+                background-attachment-scroll
+            </div>
+            <div style="width: 300px;">
+                background-attachment-scroll
+            </div>
+            <div style="width: 300px;">
+                background-attachment-scroll
+            </div>
+            <div style="width: 300px;">
+                background-attachment-scroll
+            </div>
+            <div style="width: 300px;">
+                background-attachment-scroll
+            </div>
+            <div style="width: 300px;">
+                background-attachment-scroll
+            </div>
+            <div style="width: 300px;">
+                background-attachment-scroll
+            </div>
+        </div>
+        <div class="bg-attachment-fixed">
+            <div style="width: 300px;">
+                background-attachment-fixed
+            </div>
+            <div style="width: 300px;">
+                background-attachment-fixed
+            </div>
+            <div style="width: 300px;">
+                background-attachment-fixed
+            </div>
+            <div style="width: 300px;">
+                background-attachment-fixed
+            </div>
+            <div style="width: 300px;">
+                background-attachment-fixed
+            </div>
+            <div style="width: 300px;">
+                background-attachment-fixed
+            </div>
+            <div style="width: 300px;">
+                background-attachment-fixed
+            </div>
+            <div style="width: 300px;">
+                background-attachment-fixed
+            </div>
+            <div style="width: 300px;">
+                background-attachment-fixed
+            </div>
+            <div style="width: 300px;">
+                background-attachment-fixed
+            </div>
+            <div style="width: 300px;">
+                background-attachment-fixed
+            </div>
+            <div style="width: 300px;">
+                background-attachment-fixed
+            </div>
+            <div style="width: 300px;">
+                background-attachment-fixed
+            </div>
+            <div style="width: 300px;">
+                background-attachment-fixed
+            </div>
+        </div>
+        <div class="bg-attachment-local">
+            <div style="width: 300px;">
+                background-attachment-local
+            </div>
+            <div style="width: 300px;">
+                background-attachment-local
+            </div>
+            <div style="width: 300px;">
+                background-attachment-local
+            </div>
+            <div style="width: 300px;">
+                background-attachment-local
+            </div>
+            <div style="width: 300px;">
+                background-attachment-local
+            </div>
+            <div style="width: 300px;">
+                background-attachment-local
+            </div>
+            <div style="width: 300px;">
+                background-attachment-local
+            </div>
+            <div style="width: 300px;">
+                background-attachment-local
+            </div>
+            <div style="width: 300px;">
+                background-attachment-local
+            </div>
+            <div style="width: 300px;">
+                background-attachment-local
+            </div>
+            <div style="width: 300px;">
+                background-attachment-local
+            </div>
+            <div style="width: 300px;">
+                background-attachment-local
+            </div>
+            <div style="width: 300px;">
+                background-attachment-local
+            </div>
+        </div>
+        <div class="bg-position">background-position</div>
+        <div class="bg-short">background简写</div>
+        <hr>
+        <h1>位置</h1>
+        <div style="width: 200px;height: 200px;background-color: yellowgreen;">
+            <span style="background-color: green;">外层div</span>
+            <div style="background-color: green;">static,默认值</div>
+            <div style="background-color: green;position: absolute;top: 300px;left: 300px;">absolute,页面根元素绝对位置</div>
+            <div style="background-color: green;position: fixed;top: 70px;left: 230px;">fixed，浏览器容器固定位置</div>
+            <div style="background-color: green;position: relative;top: 70px;">relative，相对于所在父元素</div>
+        </div>
+        <hr>
+        <h1>外边距与内边距</h1>
+        <div style="width: 200px;height: 200px;background-color: yellowgreen;">
+            <span style="background-color: green;">外层div</span>
+            <div style="width: 100px;height: 100px;background-color: blue;border: 5px solid red;margin: 10px 10px 1px 5px;padding: 5px 7px 1px 7px;">
+                <span>外边距与内边距内部文本<br>内部文本</span>
+            </div>
+        </div>
+        <hr>
+        <h1>字体</h1>
+        <span style="font-family: cursive;font-size: 30px;">字体font</span>
+        <hr>
+        <h1>链接</h1>
+        <a href="http://www.baidu.com">百度一下</a>
+        <a href="http://www.qq.com">QQ聊天</a>
+        <a href="http://www.jd.com">上京东</a>
+    </body>
+</html>

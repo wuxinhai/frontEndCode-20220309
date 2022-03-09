@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>我的第一个网页</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>----------------块级标签----------------</h1>
+        <h1>如何学习Web前端(h1)</h1>
+        <h4>html+css+javascript+vue(h4)</h4>
+        <p>
+            要学习好Web前端，首先，要熟悉网络的基本原理，如Http请求等；其次，要熟悉基本的前端基础技术，包括HTML、CSS和Javascript；再次，要熟悉一种前端框架，如Vue、Angular;最后还要熟悉一些UI框架，如Element-UI、AntDesign等。(p)
+        </p>
+        <div>在HTML标签中，div标签使用较多，比如用来布局，用来做为浮层等。(div)</div>
+        <div>列表标签，显示列表数据或局部布局(ul、ol、li)</div>
+        <!--无序列表-->
+        <ul>
+            <li>篮球</li>
+            <li>足球</li>
+            <li>乒乓球</li>
+        </ul>
+        <!--有序列表-->
+        <ol>
+            <li>篮球</li>
+            <li>足球</li>
+            <li>乒乓球</li>
+        </ol>
+        <!--分割线-->
+        <hr>
+        <h1>----------------行级（内联）标签----------------</h1>
+        <span>想学相关课程？</span>
+        <span>(span) 点击进入(span)</span>
+        <a href="https://lemon.ke.qq.com/" target="_blank">柠檬班课程</a>
+        <span>， 超链接的target属性值可以是：_self、_blank、_parent、_top或frame名字，由于比较少使用frame或frame集合，一般只用_self和_blank属性</span>
+        <img src="/Java测开/HTML/lemon.png" alt="柠檬班" width="40" height="40"/>
+        <b>粗体</b>
+        <i>斜体</i>
+        <del>删除线(del)</del>
+        <ins>ins(ins)</ins>
+        <sub>下标(sub)</sub>
+        <sub>上标(sub)</sub>
+        base地址图片<img src="/img/PCtm_d9c8750bed0b3c7d089fa7d55720d6cf.png" alt="百度"/>
+        <br>
+        <img src="./china.png" alt="China" usemap="#chinamap"/>
+        <map name="chinamap">
+            <area shape="rect" coords="300,10,380,110" alt="东北" target="_blank" href="http://www.baidu.com/s?wd=东北"/>
+            <area shape="circle" coords="260,250,60" alt="南方" target="_blank" href="http://www.baidu.com/s?wd=南方"/>
+            <area shape="poly" coords="260,320,350,320,350,340,330,380" alt="南海" href="http://www.baidu.com/s?wd=南海"/>
+        </map>
+        <br>
+        <a href="mailto:contact@163.com">联系我们</a>
+        <a href="tel:13888888888">13888888888</a>
+        <h1>----------------表格标签----------------</h1>
+        <table  border="1">
+            <caption>HTML标签常用属性(table，包括的子标签有tr、th、td、caption，常用属性colspan、rowspan)</caption>
+            <tr>
+                <th>属性</th>
+                <th>值</th>
+                <th>描述</th>
+            </tr>
+            <tbody style="color: lightgreen;">
+                <tr>
+                    <td>id</td>
+                    <td><i>id(i)</i></td>
+                    <td>规定元素的唯一 id</td>
+                </tr>
+                <tr>
+                    <td>name</td>
+                    <td>name</td>
+                    <td>规定元素的名称</td>
+                </tr>
+            </tbody>
+            <tbody style="color: green;">
+                <tr>
+                    <td>style</td>
+                    <td>style_definition</td>
+                    <td>规定元素的行内样式（inline style）</td>
+                </tr>
+                <tr>
+                    <td>class</td>
+                    <td>
+                        <i>classname</i>
+                    </td>
+                    <td>规定元素的类名（classname）</td>
+                </tr>
+                <tr>
+                    <td>colspan</td>
+                    <td colspan="2">跨列示例</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">rowspan</td>
+                    <td>跨行示例</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>跨行示例</td>
+                    <td></td>
+                </tr>
+            </tbody>
+            <tfoot style="font-weight: bold;">
+                <tr>
+                    <td>汇总</td>
+                    <td></td>
+                    <td>35</td>
+                </tr>
+            </tfoot>
+        </table>
+        <h1>----------------iframe简介----------------<span style="color: blue;">【扩展】</span></h1>
+        <p>
+            常用属性有
+            <ol>
+                <li>frameborder：设置边框</li>
+                <li>loading：设置加载模式，auto为默认，使用浏览器行为；lazy为滚动条滚动到可视范围才加载；eager则为立即加载</li>
+                <li>sandbox：为打开限制，可以不允许弹窗、不允许提交表单等<span style="color: blue;">【扩展】</span></li>
+            </ol>
+            <span>另外，还有frameSet和frame标签，有需要再学习使用<span style="color: blue;">【扩展】</span></span>
+        </p>
+        <iframe name="baiduFrm" frameborder="1" loading="lazy" src="" width="200" height="200" style="background-color: yellow;">
+            <a href="http://www.baidu.com">百度一下</a>
+        </iframe>
+    </body>
+</html>

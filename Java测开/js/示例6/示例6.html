@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>常用对象和函数的标题</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script type="text/javascript">
+            var department = {
+                "departmentID":1,
+                "departmentName":"财务部",
+                "employees":[
+                    {
+                        "employeeID":1,
+                        "employeeName":"张三",
+                        "sex":"男"
+                    },
+                    {
+                        "employeeID":2,
+                        "employeeName":"李四",
+                        "sex":"男"
+                    },
+                    {
+                        "employeeID":3,
+                        "employeeName":"王二麻子",
+                        "sex":"男"
+                    }
+                ]
+            };
+            //输出对象
+            console.log("对象输出:");
+            console.log(department);
+            console.log("对象属性输出:");
+            console.log(department.employees[0].employeeID);
+            var departmentStr = JSON.stringify(department); //JavaScript对象转JSON字符串
+            console.log("对象字符串形式输出;");
+            console.log(departmentStr);
+            var emp = '{"name":"jack","age":"40"}'; //JSON字符串
+            console.log("字符串转对象后输出:");
+            console.log(JSON.parse(emp));
+            //console日志输出
+            console.log("日志信息。");
+            console.debug("调试信息。");
+            console.error("错误信息。");
+            console.info("普通信息。");
+            console.warn("警告信息。");
+            console.assert("断言信息。");
+            //console.clear("清空信息。")
+        </script>
+    </body>
+</html>

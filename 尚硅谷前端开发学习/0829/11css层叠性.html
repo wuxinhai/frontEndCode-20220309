@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>CSS层叠属性</title>
+        <style type="text/css">
+            /*
+            css层叠性：不同属性都可以实现，相同属性后定义的会层叠(覆盖)先定义的，在权重不同时，谁的权重值高，实现谁的
+
+            权重：
+            标签选择器 < 类选择器 < id选择器 < 行内样式 < !important
+            */
+            .pink{
+                color: pink;
+            }
+            .green{
+                color: green;
+            }
+            #gray{
+                color: blue;
+            }
+            div{
+                color: red !important;
+            }
+            div{
+                font-size: 40px;
+            }
+            div{
+                font-weight: 700;
+                color: yellow;
+            }
+            div{
+                font-size: 60px;
+                color: violet;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="green pink" id="gray" style="color: chartreuse;">我是div</div>
+    </body>
+</html>

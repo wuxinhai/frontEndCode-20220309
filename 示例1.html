@@ -1,0 +1,28 @@
+<!DOCTYPE html>>
+<html>
+    <head>
+        <title>示例1的标题</title>
+        <meta charset="utf-8">
+        <!--这是一段典型的JavaScript，实现1秒钟修改一次div标签的背景颜色-->
+        <script type="text/javascript">
+            var colos = ["red","green","blue"];
+            var index = 0;
+            setInterval(function(){document.getElementById("dvContent").style.backgroundColor=colos[(index++)%3];},100)
+        </script>
+        <style type="text/css">
+            div{
+                border: 3px solid yellow;
+            }
+            .content{
+                width: 200px;
+                height: 200px;
+                margin: 0 auto;
+            }
+        </style>
+    </head>
+    <body style="text-align: center;">
+        <h1>示例1</h1>
+        <!--2.3行内样式-->
+        <div id="dvContent" class="content" style="background-color: blue;"></div>
+    </body>
+</html>

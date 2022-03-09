@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>示例3--员工信息登记</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <form action="api/employee/save" method="POST">
+            <table>
+                <caption><b>员工信息等级表</b></caption>
+                <tr>
+                    <td>姓名</td>
+                    <td>
+                        <input type="text" id="txtName" name="name" placeholder="请输入姓名"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>年龄</td>
+                    <td>
+                        <input id="txtAge" name="age" type="number" min="0" value="18"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>性别</td>
+                    <td>
+                        <input type="radio" id="rdoMale" value="male" name="sex" checked/><label for="rdoMale">男</label>
+                        <input type="radio" id="rdoFeMale" value="female" name="sex"/><label for="rdoFeMale">女</label>
+                </td>
+                </tr>
+                <tr>
+                    <td>业余爱好</td>
+                    <td>
+                        <input type="checkbox" name="hobby" value="red">读书<br/>
+                        <input type="checkbox" name="hobby" value="internet">上网<br/>
+                        <input type="checkbox" name="hobby" value="movie">看电影<br/>
+                        <input type="checkbox" name="hobby" value="other">其他<br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>所在部门</td>
+                    <td>
+                        <select id="sltDept" name="dept">
+                            <option value="technology">技术部</option>
+                            <option value="finance">财务部</option>
+                            <option value="employee">人事部</option>
+                            <option value="other">其他</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>照片</td>
+                    <td>
+                        <input type="file" id="txtImage" name="image" placeholder="请上传照片"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>自我评价</td>
+                    <td>
+                        <textarea rows="5" id="txtDesc" name="desc" placeholder="请输入自我评价"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <input type="submit" value="提交">
+                        <input type="button" value="普通提交按钮" onclick="alert('hello');">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

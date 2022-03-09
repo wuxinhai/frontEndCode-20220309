@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>后代选择器</title>
+        <style type="text/css">
+            /*
+                基础选择器:标签选择器、类选择器、id选择器
+                复合选择器:将基础选择器结合使用---后代选择器--- 选择器 选择器(空格表示后代,子子孙孙)
+
+            权重：
+            标签选择器 < 类选择器 < id选择器 < 行内样式 < !important
+                1           10         100       1000         无穷大
+            */
+            .h5 .hello{
+                color: royalblue;
+            }
+            /*后代选择器*/
+            /* .h5 div h3{
+                color: yellowgreen;
+            } */
+            .h5 .one h3{
+                color: blue;
+            }
+
+            /* .h5 h3{
+                color: greenyellow;
+            } */
+
+            .dog i{
+                color: chartreuse;
+            }
+            .dog h3 i{
+                color: cyan;
+            } 
+
+        </style>
+    </head>
+    <body>
+        <div class="h5">
+            <h1 class="hello">你好</h1>
+            <h3>世界</h3>
+            <h3>中国</h3>
+            <h3>朝鲜</h3>
+            <h3>古巴</h3>
+            <div class="one">
+                <h3>俄罗斯</h3>
+            </div>
+            <div>
+                <h3>伊拉克</h3>
+            </div>
+        </div>
+        <div class="dog">
+            <h1 class="hello">你好</h1>
+            <h3>世界狗
+                <i>狗东西</i>
+            </h3>
+            <h3>美国</h3>
+            <h3>日本</h3>
+            <h3>加拿大</h3>
+            <h3>澳大利亚</h3>
+        </div>
+    </body>
+</html>

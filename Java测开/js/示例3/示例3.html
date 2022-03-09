@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>常用函数</title>
+        <meta charset="utf-8">
+        <style type="text/css">
+            div{
+                border:3px solid yellow;
+            }
+            .content{
+                width: 200px;
+                height: 100px;
+            }
+        </style>
+        <script type="text/javascript">
+            window.onload = function loadData(){
+                var originals = new Array();
+                originals[0] = "dog";
+                originals[1] = "cat";
+                originals[2] = "bird";
+                originals[3] = "other";
+                //原始数据
+                document.getElementById("spnOriginal").innerText = originals.toString();
+                //slice 切割
+                var sliceArray = originals.slice(1,3);
+                document.getElementById("spnSlice").innerText = sliceArray.toString();
+                //splice
+                var spliceArray = JSON.parse(JSON.stringify(originals)); //深拷贝，将数组转换成字符串
+                var deleteArray = spliceArray.splice(1,2);
+                document.getElementById("spnSplice").innerText = deleteArray.toString();
+                document.getElementById("spnOriginalSplice").innerText = spliceArray.toString();
+                //sort，按字母排序
+                var sortArray = JSON.parse(JSON.stringify(originals)).sort(); //深拷贝
+                document.getElementById("spnSort").innerText = sortArray;
+
+                //Date
+                var currentDate = new Date();
+                document.getElementById("spnCurrentDate").innerText = currentDate;
+                var tempDate = new Date();
+                tempDate.setFullYear(2008,08,08);
+                tempDate.setHours(08,08,08);
+                document.getElementById("spnTempDate").innerText = tempDate;
+                //Math
+                document.getElementById("spnRandom").innerText = Math.random();
+                document.getElementById("spnRound").innerText = Math.round(4,6);
+                document.getElementById("spnCeil").innerText = Math.ceil(4,6);
+                document.getElementById("spnFloor").innerText = Math.floor(4,6);
+                document.getElementById("spnPI").innerText = Math.PI;
+                //常用函数
+
+                var colors = ["red","green","blue"];
+				var index = 0;
+				setInterval(function(){
+						document.getElementById("dvContent").style.backgroundColor = colors[(index++)%3];
+					},1000);
+				setTimeout(function(){
+						document.getElementById("dvContentTimeout").style.backgroundColor = "black"; 
+					},2000);
+
+                var colors = ["red","green","blue"];
+                var index = 0;
+                setInterval(function(){
+                    document.getElementById("dvContent").style.backgroundColor = colors[(index++)%3];
+                },1000);
+                setTimeout(function(){
+                    document.getElementById("dvContentTimeout").style.backgroundColor = "black";
+                },2000);
+                document.getElementById("spnEval").innerHTML = eval("2+2*3");
+            }
+        </script>
+    </head>
+    <body >
+        <h1>--Array--</h1>
+        原始数组:<span id="spnOriginal"></span><br>
+        slice(1,3):<span id="spnSlice"></span><br>
+        splice(1,2)返回的内容:<span id="spnSplice"></span><br>
+        splice(1,2)后原数组内容:<span id="spnOriginalSplice"></span><br>
+        sort后:<span id="spnSort"></span><br>
+        <hr>
+        <h1>--Date--</h1>
+        当前时间:<span id="spnCurrentDate"></span><br>
+        指定时间:<span id="spnTempDate"></span><br>
+        <h1>--Math--</h1>
+        Math.random:<span id="spnRandom"></span><br>
+        Math.round(4.6):<span id="spnRound"></span><br>
+        Math.ceil(4.6):<span id="spnCeil"></span><br>
+        Math.floor(4.6):<span id="spnFloor"></span><br>
+        Math.PI:<span id="spnPI"></span><br>
+        <hr>
+        <h1>--常用函数--</h1>
+        <div id="dvContent" class="content" style="background-color: blue;"></div>
+        <div id="dvContentTimeout" class="content" style="background-color: blue;"></div>
+        <div id="dvEval">eval("2+2*3"):<span id="spnEval"></span></div>
+        <hr>
+    </body>
+</html>

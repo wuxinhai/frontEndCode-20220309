@@ -1,0 +1,103 @@
+.header-wrap{
+    height: 30px;
+    background: #eaeaea;
+}
+.header{
+    width: 1200px;
+    height: 30px;
+    margin: 0 auto;
+    line-height: 30px;
+}
+.header .list-left{
+    float: left;
+}
+.header .list-right{
+    float: right;
+}
+.header .list-left li{
+    float: left;
+}
+.header .list-left li a{
+    display: block;
+}
+.header .list-left .line{
+    float: left;
+    width: 1px;
+    height: 16px;
+    background: #b3aeae;
+    margin-top: 7px;
+    margin-right: 5px;
+}
+.logAndSearch{
+    width: 1200px;
+    height: 106px;
+    background: pink;
+    margin: 0 auto;
+}
+.logAndSearch .log{
+    float: left;
+    height: 56px;
+    margin: 25px 0 0 45px;
+    overflow: hidden;
+}
+/*第一种:插入图*/
+.logAndSearch .logo a{
+    display: block;
+    text-indent: -9999px;
+}
+/*第二种:背景图*/
+.logAndSearch .log a{
+    background: url(../img/Logo.png) no-repeat 0 0;
+    display: block;
+    width: 175px;
+    height: 56px;
+    text-indent: -9999px;
+}
+.logoAndSearch-center{
+	/* width: 560px;
+	height: 100px;
+	background: yellow; */
+	float: left;
+	margin: 10px 0 0 35px;
+}
+.logoAndSearch-center .baby li {
+	float: left;
+	width: 36px;
+	height: 22px;
+	text-align: center;
+	line-height: 22px;
+	color: #ea4a36;
+	/* cup tab键 */
+	cursor: pointer;
+}
+
+.logoAndSearch-center .baby li:hover{
+    background: #FFEEE5;
+}
+.logAndSearch .logoAndSearch-center .baby .current{
+    font-weight: 700;
+    color: #fff;
+    /*第一种:提权*/
+    /* background: #ea4a36 !important; */
+    background: #ea4a36;
+}
+.logoAndSearch-center .sub .txt{
+    width: 477px;
+    height: 28px;
+    border: 2px solid #ea4a36;
+    border-right: none;
+    /* background: url(../img/f); */
+    padding-left: 10px;
+    /*圆角属性*/
+    border-radius: 20px 0 0 20px;
+}
+.logoAndSearch-center .sub .btn{
+    float: right;
+    width: 70px;
+    height: 32px;
+    background: #ea4a36;
+    color: #fff;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+}
+

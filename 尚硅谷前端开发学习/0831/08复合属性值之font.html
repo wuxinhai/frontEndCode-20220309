@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>复合属性之font</title>
+        <style type="text/css">
+            /*
+            css属性称为单属性
+            单属性:一个属性名对应一个属性值
+            复合属性:一个属性名对应多个属性值
+            */
+            .box{
+                height: 500px;
+                background: pink;
+                color: red;
+                /*font的单属性*/
+                /* font-size: 40px;
+                font-weight: 700;
+                /*
+                设置倾斜
+                italic  倾斜
+                normal  正常
+                */
+                /*font-style: italic;
+                font-family: "宋体";
+                line-height: 500px; */
+                /*font复合属性*/
+                /*是否倾斜  是否加粗 字号(必填项)/行高 字体(必填项)*/
+                font: italic 700 40px/500px "宋体";
+                /*当单属性和复合属性同时存在时，要险些复合属性再写单属性，否则会呗复合属性中的值层叠掉*/
+
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box">复合属性之font</div>
+    </body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--head常用标签-->
+        <!--标题-->
+        <title>我的第一个网页</title>
+        <meta charset="utf-8">
+        <!--meta-->
+        <meta name="keywords" content="第一个网页,htm,HTML">
+        <!--css-->
+        <style type="text/css"></style>
+        <link rel="stylesheet" type="text/css" href="xxx.css">
+        <!--JavaScript-->
+        <script type="text/javascript"></script>
+        <script type="text/javascript" src="xxx.js"></script>
+    </head>
+    <body bgcolor="lightYellow"><!--还有background可以设置背景图片之类的，也可以使用后续学习的css设置-->
+        <h1>---------------块级标签---------------</h1>
+        <!--html页面内容的主要定义位置-->
+        <h1>如何学习Web前端(h1)</h1>
+        <!--标题-->
+        <h4>html+css+javascript+vue(h4)</h4>
+        <p>
+            要学习好Web前端，首先，要熟悉网络的基本原理，如Http请求等；
+            其次，要熟悉基本的前端基础技术，包括HTML、CSS和JavaScript；
+            框架，如Vue、Angular；最后还要熟悉一些UI框架，如Element-UI、AntDesign等。
+        </p>
+        <div>在HTML标签中，div标签使用较多，比如用来布局，用来做为浮层等</div>
+        <div>列表标签，显示列表数据或局部布局</div>
+        <ul> <!--列表标签-->
+            <li>篮球</li>
+            <li>足球</li>
+            <li>乒乓球</li>
+        </ul>
+        <ol>
+            <li>篮球</li>
+            <li>足球</li>
+            <li>乒乓球</li>
+        </ol>
+        <hr/> <!--分割线-->
+        <h1>-----------------行级（内联）标签-------------</h1>
+        <span>想学相关课程？</span>
+        <span>点击进入</span>
+        <a href="https://lemon.ke.qq.com/" target="_blank">柠檬班课程</a>
+        <span>超链接的target属性值可以是：_self、_blank、_parent、_top或frame，frame或frame集合比较少用</span>
+        <img src="图片路径" alt="柠檬班" width="40" height="40"/>
+        <b>粗体</b>
+        <i>斜体</i>
+        <del>删除线</del>
+        <ins>ins</ins>
+        <sub>下标</sub>
+        <sup>上标</sup>
+        base地址图片<img src="图片地址" alt="百度"/>
+        <br/>
+        <img src="图片地址" alt="china" usemap="#chinamap"/>
+        <map name="chinamap">
+            <!--x1:300,y1:10,x2:380,y2:110的矩形-->
+            <area shape="rect" coords="300,10,380,110" alt="东北" target="_blank" href="http://www.baidu.com/s?wd=东北"/>
+            <!--x:260,y:250，60为半径的圆-->
+            <area shape="circle" coords="260,250,60" alt="南方" target="_blank" href="http://www.baidu.com/s?wd=南方"/>
+            <!--x1,y1,x2,y2,x3,y3的多边形-->
+            <area shape="poly" coords="260,320,350,320,350,340,330,380" alt="南海" target="_blank" href="http://www.baidu.com/s?wd=南海"/>
+        </map>
+        <br/>
+        <h1>-----------------表格标签------------------</h1>
+        <table border="1">
+            <caption>HTML标签常用属性(table,包括的子标签有tr、th、td、caption,常用属性colspan、rowspan)</caption>
+            <thead style="color: blue;">
+                <tr>
+                    <th>属性</th>
+                    <th>值</th>
+                    <th>描述</th>
+                </tr>
+            </thead>
+            <tbody style="color:lightgreen;">
+            <tr>
+                <td>id</td>
+                <td>
+                    <i>id</i>
+                </td>
+                <td>规定元素的唯一id</td>
+            </tr>
+            <tr>
+                <td>name</td>
+                <td>
+                    name
+                </td>
+            </tr>
+            <tr>
+                <td>colspan</td>
+                <td colspan="2">跨列示例</td>
+            </tr>
+            <tr>
+                <td rowspan="2">rowspan</td>
+                <td>跨行示例</td>
+            </tr>
+            </tbody>
+        </table>
+        <iframe name="frmSub" frameborder="1" loading="lazy" width="200" height="200"></iframe>
+        <p><a href="http://www.baidu.com" target="frmSub" rel="noopener noreferrer">跳转到百度</a></p>
+    </body>
+</html>

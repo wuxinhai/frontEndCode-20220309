@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <style type="text/css">
+            .box{
+                width: 1800px;
+                height: 1500px;
+                border: 1px solid #000;
+                /*background 单属性*/
+                /*背景色*/
+                background-color: yellow;
+                /*背景图*/
+                background-image: url(mm.jpg);
+                /*
+                平铺方式
+                repeat 平铺(默认值) 
+                repeat-x水平平铺
+                repeat-y垂直平铺
+                no-repeat不平铺
+                */
+                background-repeat: repeat;
+                /*
+                背景图在元素中的位置
+                水平位置left/center/right  数值：正值向右，负值向左
+                垂直位置top/center/bottom  数值：政治向下，负值向上
+                */
+                background-position: 100px 0px;
+                /*background 复合属性*/
+                /*背景色 背景图 平铺方式 水平位置 垂直位置*/
+                background: yellow url(mm.jpg) no-repeat center center;
+
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box">我是div</div>
+    </body>
+</html>

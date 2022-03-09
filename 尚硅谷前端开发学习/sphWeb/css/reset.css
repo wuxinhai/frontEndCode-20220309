@@ -1,0 +1,77 @@
+/*基础设置*/
+body,h1,h2,h3,h4,h5,h6,p,ul,ol,dl,li,dt,dd{
+    margin: 0;
+    padding: 0;
+}
+ul,ol{
+    /*去掉小圆点*/
+    list-style: none;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: 400;
+    /*父元素字号的百分比*/
+    font-size: 100%;
+}
+b,strong{
+    font-weight: 400;
+}
+i,em{
+    /*不倾斜*/
+    font-style: normal;
+}
+u,ins,s,del{
+    /*没有下划线*/
+    text-decoration: none;
+}
+table{
+    width: 500px;
+    height: 300px;
+    border: 1px solid red;
+    /*相当于cellspacing*/
+    border-spacing: 0;
+    /*1px边框*/
+    border-collapse: collapse;
+}
+th,td{
+    border: 1px solid red;
+    text-align: center;
+}
+img{
+    /*底部留白*/
+    display: block;
+}
+.clearFix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+/*风格设置*/
+body{
+    font: 12px/1.3 "Microsoft YaHei",Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;
+    color: #333;
+}
+a{
+    color: #333;
+    text-decoration: none;
+}
+a:hover{
+    color: yellowgreen;
+}
+input,button{
+    /*去除轮廓线*/
+    outline: none;
+    border: none;
+}
+input{
+    /*去掉表单的默认内边距*/
+    padding: 0;
+}
+
+
+
+
+
+
+
+
+

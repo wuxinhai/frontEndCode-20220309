@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>deom1</title>
+        <meta charset="utf-8">
+        <script type="text/javascript">
+            //改变内容
+            function changeContent(){
+                document.getElementById("h2Content").innerHTML="<span style='color:yellow;'>我是</span>改变后的内容";
+            }
+            //改变样式
+            function changeStyle(){
+                document.getElementById("h3Content").style.color="green";
+                document.getElementById("h3Content").style.fontSize="40px";
+            }
+            //表单验证
+            function formVerify(){
+                var result = true;
+                var name = document.getElementById("txtName").value.trim();
+                if(name==""){
+                    result = false;
+                }
+                if(result==false){
+                    alert("输入项不能为空!");
+                }
+                return result;
+            }
+        </script>
+        <!--引入外部.js文件-->
+        <script type="text/javascript" src="demo.js"></script>
+    </head>
+    <body>
+        <h1>--【改变内容】--</h1>
+        <h2 id="h2Content">
+            改变前的内容
+            <span>改变前的子内容</span>
+        </h2>
+        <input type="button" value="改变内容" onclick="changeContent();"/>
+        <h1>--【改变样式】--</h1>
+        <h3 id="h3Content" style="color: red;">展示样式改变。</h3>
+        <input type="button" value="改变样式" onclick="changeStyle();"/>
+        <h4 id="h4Content">--【表单验证】--</h4>
+        <!--表单-->
+        <form action="api/employee/save" method="post" onsubmit="return formVerify()">
+            姓名:<input type="text" id="txtName"/>
+            <br>
+            <input type="submit" value="提交"/>
+        </form>
+        <h5>--【调用外部js方法】--</h5>
+        <input type="button" id="h5Content" value="调用外部方法" onclick="outCode();"/>
+    </body>
+</html>

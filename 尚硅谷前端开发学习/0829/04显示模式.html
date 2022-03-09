@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <style type="text/css">
+            /*显示模式:
+                块级显示模式：独占一行，设置宽高起作用,在没有设置固定宽度时，和父元素的宽度一样
+                块元素:html、body、div、h1~h6、p、ul、ol、li、dl、dt、dd、hr、form
+
+                行内显示模式：一行有多个，设置宽高不起作用，尺寸由内容决定,在没有内容时，宽高就是0，
+                当行内元素有一个及以上的空格时，显示效果之前会有一个默认的间距
+                行内元素:span、a、b、strong、i、em、u、ins、s、del
+
+                行内块显示模式:一行有多个，设置宽高起作用
+                行内块元素:img、表单标签
+            */
+            div{
+                width: 200px;
+                height: 200px;
+                background: yellowgreen;
+            }
+            b{
+                width: 1000px;
+                height: 1000px;
+                background: green;
+                font-size: 50px;
+            }
+            i{
+                background: pink;
+            }
+        </style>
+    </head>
+    <body>
+        <div></div><div></div>
+        <b>加粗</b>
+        <b>家啊粗</b>
+        <b></b>
+        <i>倾斜</i>
+        <strong>strong</strong>
+        <em>em</em>
+        <u>u</u>
+        a dozen is <del>20</del> <ins>12</ins> pieces
+        <s>s</s>
+        <del>del</del>
+        <img src="" width="20px" height="200px">
+        <img src="" width="20px" height="200px">
+    </body>
+</html>

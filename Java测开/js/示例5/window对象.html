@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>window对象</title>
+        <meta charset="utf-8">
+        <script type="text/javascript">
+            /*加载数据函数*/
+            function loadData(){
+                //navigator
+                var navigatorResult = "<p>浏览器代号:" + navigator.appCodeName + "</p>";
+                navigatorResult += "<p>浏览器名称:"+ navigator.appName +"</p>";
+                navigatorResult += "<p>浏览器版本:"+ navigator.appVersion + "</p>";
+                navigatorResult += "<p>启用Cookies:" + navigator.cookieEnabled + "</p>";
+                navigatorResult += "<p>硬件平台:" + navigator.platform + "</p>";
+                navigatorResult += "<p>用户代理:" + navigator.userAgent + "</p>";
+                navigatorResult += "<p>用户代理语言:" + navigator.language + "</p>";
+                document.getElementById("dvNavigator").innerHTML = navigatorResult;
+                //screen
+                var screenResult = "<p>screen.width: " + screen.width + "</p>";
+                screenResult += "<p>screen.height: " + screen.height + "</p>";
+                screenResult += "<p>document.body.clientWidth:" + document.body.clientWidth + "</p>";
+                screenResult += "<p>docuemnt.body.clientHeight:" + docuemnt.body.clientHeight + "</p>";
+            }
+            //确认框
+            function confirmResult(){
+                var result = window.confirm("你确认吗?");
+                if(result == true){
+                    window.alert("你选择了[确定]");
+                }else{
+                    window.alert("你选择了[取消]");
+                }
+            }
+            //提示结果
+            function promptResult(){
+                var result = window.prompt("请输入姓名:");
+                if(result){
+                    window.alert(result + ",你好!");
+                }
+            }
+
+        </script>
+
+    </head>
+    <body onload="loadData();">
+        <h1>--【window.history】--</h1>
+        <input type="button" value="后退" onclick="window.history.back();"/>
+        <h1>--【window.location】--</h1>
+        <input type="button" value="location.href" onclick="window.location.href='http://www.jd.com';"/>
+        <input type="button" value="window.open" onclick="window.open('http://www.jd.com','_black');"/>
+        <h1>--【window.navigator】--</h1>
+        <div id="dvNavigator"></div>
+        <h1>--【window.screen】--</h1>
+        <div id="dvScreen"></div>
+        <h1>--【弹窗】--</h1>
+        <input type="button" value="警告框" onclick="window.alert('这是一条警告！');"/>
+        <input type="button" value="确认框" onclick="confirmResult();"/>
+        <input type="button" value="提示框" onclick="promptResult();"/>
+    </body>
+</html>

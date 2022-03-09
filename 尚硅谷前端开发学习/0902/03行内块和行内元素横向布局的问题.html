@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <style type="text/css">
+            /*
+            行内块元素和行内元素横向布局的问题:
+            行内块布局的问题：代码换行会有默认间距，行内块是沿基线对齐(底对齐)，
+            当给元素设置垂直方向的内外边距时，会影响周围的元素
+            行内元素布局问题：代码换行会有默认间距，行内元素是沿基线对齐(底对齐)，
+            当给元素设置垂直方向的内外边距时，由于受基线对齐的限制，垂直方向的内外边距是不起作用的。
+
+            浮动横向布局：没有代码换行的间距，设置自身内外（垂直）边距不会影响周围的元素。
+            */
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            .one{
+                width: 100px;
+                height: 100px;
+                background: red;
+                /*左浮动*/
+                /* float: left; */
+            }
+            .two{
+                width: 200px;
+                height: 200px;
+                background: yellowgreen;
+            }
+            .three{
+                width: 100px;
+                height: 100px;
+                background: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+    </body>
+</html>

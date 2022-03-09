@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <style type="text/css">
+            /*
+            浮动:是一个属性float，浮动是一个脱离标准流的状态，也叫浮动流。
+            当元素设置浮动后，按照标签的书写顺序，一次排列在包含块(父元素)的左上。
+            */
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            .one{
+                width: 100px;
+                height: 100px;
+                background: red;
+                /*左浮动*/
+                float: left;
+            }
+            .two{
+                width: 200px;
+                height: 200px;
+                background: green;
+                float: left;
+            }
+            .three{
+                width: 300px;
+                height: 300px;
+                background: blue;
+                float: left;
+            }
+            .main{
+                height: 400px;
+                background: grey;
+            }
+            .box{
+                width: 1000px;
+                height: 500px;
+                border: 1px solid #000;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box">
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+        </div>
+        <div class="main"></div>
+    </body>
+</html>

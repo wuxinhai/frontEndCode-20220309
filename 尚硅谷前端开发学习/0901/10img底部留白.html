@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <style type="text/css">
+            /*
+            解决方案:
+            1.将img转换成块元素，display:block   推荐
+            2.将box的字体设置成0
+            */
+            .box{
+                border: 1px solid red;
+                font-size: 0;
+            }
+            .box img{
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box">
+            <img src="/尚硅谷前端开发学习/1.png">
+        </div>
+    </body>
+</html>

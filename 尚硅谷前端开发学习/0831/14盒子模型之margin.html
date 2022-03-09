@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <style type="text/css">
+            /*
+            盒子外边距margin 也有4个属性 设置外边框时不改变盒子本身大小，只会改变盒子的位置。
+            margin-top 上外边距。
+            margin-right 右外边距  因为盒子时块元素，默认垂直排列,故右边距不显示，除非2个块元素水平排列，右外边距会实现。
+            margin-bottom 下外边距 如果一个盒子时，下外边距不显示，如果有2个盒子，上面的盒子设置下外边距，下面的盒子设置上外边距，则此时盒子之间的外边距以大的像素为准。
+            margin-left 左外边距。
+
+
+            */
+            .box1{
+                height: 200px;
+                width: 200px;
+                background: aquamarine;
+                margin-top: 50px;
+                margin-right: 50px;
+                margin-left: 100px;
+                margin-bottom: 20px;
+            }
+            /*box1的下边距为20  box1的上外边框为50 则实现2个盒子的外边距为50*/
+            .box2{
+                height: 200px;
+                width: 200px;
+                background: chartreuse;
+                margin-top: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box1"></div>
+        <div class="box2"></div>
+    </body>
+</html>
