@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        /*
+        css层叠属性：选择器相同时，不同属性都可以实现,相同属性时后定义的会层叠（覆盖）先定义的，
+                    选择器不同时，谁的权重值高，实现谁的。
+        权重：
+            标签选择器 < 类选择器 < id选择器 < 行内样式 < !important
+        */
+        #gray{
+            color: gray;
+        }
+        .pink{
+            color: pink;
+        }
+        .green{
+            color: green;
+        }
+        div{
+            color: red !important;
+            
+        }
+        div{
+            font-size: 40px;
+        }
+        div{
+            font-weight: 700;
+            color: blue;
+        }
+        div{
+            font-size: 50px;
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="green pink" id="gray" style="color: skyblue;">我是div</div>
+</body>
+</html>
