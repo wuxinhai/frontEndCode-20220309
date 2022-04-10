@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        /*
+        盒子模型之内边距padding：设置盒子与内容之间的间距,当盒子设置内边距后，
+        会撑大盒子的尺寸，为了保证盒子尺寸不变，又需要有内边距的效果，要相应的从盒子的宽高减去撑大的尺寸。
+
+        盒子在网页中的尺寸 = content区域(设置的宽高) + padding区域 + border区域
+        */
+        .box{
+            width: 200px;
+            height: 200px;
+            background: pink;
+            /* 单属性 */
+            /* 左内边距 */
+            /* padding-left: 10px; */
+            /* 上内边距 */
+            /* padding-top: 10px; */
+            /* 右内边距 */
+            padding-right: 10px;
+            /* 下内边距 */
+            padding-bottom: 10px;
+            /* border: 10px solid red; */
+
+            /* 复合属性 */
+            /*
+             一个值：上下左右
+            */
+            padding: 10px;
+            /* 
+            两个值：上下 10px  左右 20px
+             */
+            padding: 10px 20px;
+            /*
+            三个值：上  左右 下
+            */
+            padding: 10px 20px 30px;
+            /*
+            四个值：上 右 下  左
+            */
+            padding: 10px 20px 30px 40px;
+        }
+        .box .phone{
+            width: 50px;
+            height: 100px;
+            background: yellowgreen;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="phone">手机</div>
+    </div>
+</body>
+</html>

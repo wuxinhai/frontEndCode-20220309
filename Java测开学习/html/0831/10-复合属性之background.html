@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        .box{
+            width: 800px;
+            height: 500px;
+            border: 1px solid #000;
+            /* background 单属性 */
+            /* 背景色 */
+           background-color: yellow;
+           /* 背景图 */
+           /* 背景图的尺寸与盒子的尺寸无关 */
+           background-image: url(../0827/phone.png);
+           /* 
+           平铺方式
+            repeat 平铺(默认值)
+            repeat-x 水平平铺
+            repeat-y 垂直平铺
+            no-repeat 不平铺
+           */
+           background-repeat: no-repeat;
+           /* 背景图在元素中的位置
+           水平位置: 
+                left/center/right   数值：正值向右，负值向左
+           垂直位置:
+                top/center/bottom   数值：正值向下，负值向上
+
+
+           */
+           /* background-position: left center; */
+           background: position 100px 100px;
+
+           /* background 复合属性 */
+           /* 背景色 背景图 平铺方式 水平位置 垂直位置*/
+           background: yellow url(../0827/phone.png) no-repeat center center;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

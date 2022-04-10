@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        /*
+        1.有5个标签，默认状态，宽度是100，高是30，背景色是yellow，字体颜色是green，文本水平且居中a标签，去掉下划线
+        2.鼠标移入a时，背景色变成yellowgreen，字体颜色变成red，加上下划线
+        3.5个a标签水平居中box，box背景色是pink
+        */
+        .box{
+            background: pink;
+            text-align: center;
+        }
+        .box a{
+            width: 100px;
+            height: 30px;
+            background: yellow;
+            /* 转换成行内块 */
+            display: inline-block;
+            /* 水平居中 */
+            /* text-align: center; */
+            /* 垂直居中 */
+            line-height: 30px;
+        }
+        .box a:hover{
+            background: yellowgreen;
+            color: red;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <a href="##">导航</a>
+        <a href="##">导航</a>
+        <a href="##">导航</a>
+        <a href="##">导航</a>
+        <a href="##">导航</a>
+    </div>
+</body>
+</html>

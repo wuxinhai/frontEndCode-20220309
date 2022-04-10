@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        /* 默认状态 */
+        a{
+            font-size: 60px;
+        }
+        /*
+        状态伪类：权重是10 当四个状态同时存在时要遵循lvha顺序
+        */
+        /* 未访问状态 */
+        a:link{
+            color: red;
+            font-size: 20px;
+        }
+        /* 
+        访问后状态
+        出于隐私的考虑，访问后的状态只能设置字体颜色
+        */
+        a:visited{
+            color: yellowgreen;
+            font-size: 80px;
+        }
+        /* 鼠标移入状态 */
+        a:hover{
+            color: black;
+            font-size: 40px;
+        }
+        /* 鼠标按下(触发)状态 */
+        a:active{
+            color: yellow;
+            font-size: 60px;
+        }
+    </style>
+</head>
+<body>
+    <a href="##">超链接</a>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        /*
+        之前学习的css属性称为单属性
+        单属性：一个属性名对应一个属性值
+        复合属性：一个属性名对应多个属性值
+
+        当复合属性和单属性同时存在时，要先写复合属性再写单属性，否则会被复合属性中的值层叠掉
+        */
+        .box{
+            height: 500px;
+            background: pink;
+            color: red;
+            /* font-size: 40px;
+            font-weight: 700; */
+            /* 设置倾斜
+                    italic 倾斜
+                    normal 正常
+             */
+            /* font-style: italic;
+            font-family: "宋体";
+            line-height: 500px; */
+
+            /* font复合属性 字号和字体是必填项*/
+            /* 是否倾斜 是否加粗 字号/行高 字体 */
+
+            font: italic 700 40px/500px "宋体";
+        }
+    </style>
+</head>
+<body>
+    <div class="box">复合属性之font</div>
+</body>
+</html>
