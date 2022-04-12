@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        /*
+        外边距合并：垂直排列的两个块元素，分别给上面的盒子设置向下的外边距和给下面的盒子设置向上的外边距，
+        此时会形成外边距合并，当两个值相同时，就是该值，当两个值不同时是较大的那个值。
+        */
+        .one{
+            width: 200px;
+            height: 200px;
+            background: pink;
+            margin-bottom: 10px;
+        }
+        .two{
+            width: 200px;
+            height: 200px;
+            background: blue;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="one"></div>
+    <div class="two"></div>
+</body>
+</html>

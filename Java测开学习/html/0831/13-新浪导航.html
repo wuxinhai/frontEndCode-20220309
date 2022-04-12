@@ -5,8 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style type="text/css">
+        .box{
+            height: 41px;
+            /* 由于box的默认字号是16px，此时如果将a标签的字号设置成14px，
+            会和16px的文本沿着基线对齐，a标签会偏下
+            */
+            font-size: 14px;
+            background: #fcfcfc;
+            border-top: 3px solid #ff8500;
+            border-bottom: 1px solid #edeef0;
+            padding: 0 170px 0 170px;
+        }
+        .box a{
+            color: #4c4c4c;
+            text-decoration: none;
+            height: 41px;
+            line-height: 41px;
+            display: inline-block;
+            padding: 0 16px 0 16px;
+        }
+        .box a:hover{
+            color: #ff8500;
+            background: #edeef0;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="box">
+        <a href="##">酒店</a>
+        <a href="##">标准间</a>
+        <a href="##">超大床房</a>
+        <a href="##">超级vip豪华总统大床套房</a>
+    </div>
 </body>
 </html>
