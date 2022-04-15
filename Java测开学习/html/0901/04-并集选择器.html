@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        /*
+        并集选择器：将多个选择器用逗号隔开，实现共同的属性。
+        */
+        /* span,p,h1{
+            border: 1px solid red;
+        } */
+
+        .box span,.box p,.box .one{
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <span>span</span>
+        <p>段落</p>
+        <h1 class="one">标题</h1>
+    </div>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        /*样式初始化*/
+        *{
+            margin: 0;
+            padding: 0;
+            /* 去掉小圆点 */
+            list-style: none;
+
+        }
+
+        body{
+            background: #333;
+        }
+
+        .box{
+            width: 240px;
+            /* 去掉固定高度 兼容不同条数的内容 */
+            /* height: 338px; */
+            background: url(./img/bg.png);
+            margin: 50px auto 0;
+            /* overflow: hidden; */
+            /*设置content上下左右内边距*/
+            padding: 10px;
+        }
+
+        .box h3{
+            color: #FFFFFF;
+            font-family: "黑体";
+            font-size: 20px;
+            /* 左边的边框 */
+            border-left: 4px solid #C9E143;
+            /* 设置外边距 */
+            margin-bottom: 5px;
+            /* margin: 10px 10px 0 10px; */
+        }
+
+        .box .list{
+            /* 去掉固定高度 兼容不同条数的内容 */
+            /* height: 310px; */
+            background: #FFFFFF;
+            /* 设置列表的左右内边距 */
+            padding: 0 10px 0 10px;
+        }
+
+        .box .list li{
+            /* 设置虚线 */
+            border-bottom: 1px dashed #666666;
+            /* 设置行高 */
+            height: 30px;
+            /* 设置行间距 */
+            line-height: 30px;
+            /* 设置小脚丫背景图 */
+            background: url(./img/tb.gif) no-repeat 6px center;
+        }
+
+        .box .list li a{
+            text-decoration: none;
+            color: #0066CC;
+            font-size: 12px;
+            /* 行内元素转换成块元素 */
+            display: block;
+            /* 给a标签加上内边距 */
+            padding-left: 19px;
+            /* 首行缩进 */
+            /* text-indent: 19px; */
+        }
+
+        .box .list li a:hover{
+            color: #FF0000;
+            text-decoration: underline;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h3>爱宠知识</h3>
+        <ul class="list">
+            <li>
+                <a href="##">养狗比养猫对健康更有利</a>
+            </li>
+            <li>
+                <a href="##">养狗比养猫对健康更有利</a>
+            </li>
+            <li>
+                <a href="##">养狗比养猫对健康更有利</a>
+            </li>
+            <li>
+                <a href="##">养狗比养猫对健康更有利</a>
+            </li>
+            <li>
+                <a href="##">养狗比养猫对健康更有利</a>
+            </li>
+            <li>
+                <a href="##">养狗比养猫对健康更有利</a>
+            </li>
+            <li>
+                <a href="##">养狗比养猫对健康更有利</a>
+            </li>
+            <li>
+                <a href="##">养狗比养猫对健康更有利</a>
+            </li>
+            <li>
+                <a href="##">养狗比养猫对健康更有利</a>
+            </li>
+            <li>
+                <a href="##">养狗比养猫对健康更有利</a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
