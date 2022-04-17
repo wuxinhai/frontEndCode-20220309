@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        /*
+        img底部留白：由于img是行内块元素，底部和文本的基线对齐，所以会有一部分留白。
+        解决方案：
+        1.将img转换成块元素 display:block
+        2.将box的字号设置成0
+        */
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .box{
+            width: 238px;
+            height: 212px;
+            /* background: pink; */
+            margin: 100px auto 0;
+            border: 1px solid #D9E0EE;
+            border-top: 3px solid #FF8500;
+        }
+        .box h3{
+            border-bottom: 1px solid #D9E0EE;
+            height: 35px;
+            line-height: 35px;
+            font-size: 16px;
+            padding-left: 12px;
+        }
+        .box h3 a{
+            text-decoration: none;
+            color: #000;
+            font-family: "Microsoft YaHei","微软雅黑","SimHei","黑体";
+            font-weight: 400;
+        }
+        .box h3 a:hover{
+            color: #FF8400;
+        }
+        .box .banner{
+            width: 180px;
+            height: 108px;
+            background: pink;
+            margin: 7px auto 0;
+        }
+        .box .banner a{
+            display: block;
+            height: 108px;
+            text-decoration: none;
+            background: black;
+        }
+        .box .banner a span{
+            display: block;
+            color: #FFFFFF;
+            height: 21px;
+            line-height: 21px;
+            text-align: center;
+            font-size: 14px;
+        }
+        .box .banner a img{
+            display: block;
+        }
+        /* 鼠标移入a时，让后代的span字体颜色变化 */
+        .box .banner a:hover span{
+            color: #FF8400;
+        }
+        .box .list{
+            margin-top: 10px;
+        }
+        .box .list li{
+            height: 24px;
+            line-height: 24px;
+            /* 父元素和子元素字号不同时，两个字体会存在父元素字体偏下问题，设置父元素固定高度和字号 */
+            font-size: 12px;
+            background: url(./img/dian.png) no-repeat 9px center;
+            padding-left: 19px;
+        }
+        .box .list li a{
+            color: #666;
+            text-decoration: none;
+        }
+        .box .list li a:hover{
+            color: #FF8400;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h3>
+            <a href="##">图片博客</a>
+        </h3>
+        <div class="banner">
+            <a href="##">
+                <img src="./img/banner.jpg">
+                <span>俄罗斯迎来胜利</span>
+            </a>
+        </div>
+        <ul class="list">
+            <li>
+                <a href="##">攻入基辅，活捉戏剧演员司机！</a>
+            </li>
+            <li>
+                <a href="##">拿下乌克兰，全歼新纳粹！</a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

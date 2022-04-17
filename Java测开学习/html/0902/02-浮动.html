@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        /*
+        浮动就是来做横向布局的。
+        之前学习的三种显示模式被称为标准流
+        浮动：是一个属性float,浮动是一个脱离标准流的状态，也叫浮动流。
+        当元素设置浮动后，按照标签的书写顺序，一次排列在包含块(父元素)的左上。
+        */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .one{
+            width: 100px;
+            height: 100px;
+            background: red;
+            /* 左浮动 */
+            float: left;
+        }
+        .two{
+            width: 200px;
+            height: 200px;
+            /* 左浮动 */
+            float: left;
+            background: green;
+        }
+        .three{
+            width: 300px;
+            height: 300px;
+            /* 左浮动 */
+            float: left;
+            background: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="three"></div>
+</body>
+</html>
