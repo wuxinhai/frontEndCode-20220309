@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        /*
+        左浮动：浮动元素按照标签书写顺序在父元素的左上由左向右依次排开，
+        右浮动：浮动元素按照标签书写顺序在父元素的右上由右向左依次排开
+        */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .one{
+            width: 100px;
+            height: 100px;
+            background: red;
+            /* 左浮动 */
+            float: left;
+        }
+        .two{
+            width: 200px;
+            height: 200px;
+            /* 左浮动 */
+            float: left;
+            background: green;
+        }
+        .three{
+            width: 300px;
+            height: 300px;
+            /* 左浮动 */
+            float: left;
+            background: blue;
+        }
+        .main{
+            height: 300px;
+            background: grey;
+        }
+        .box{
+            width: 1000px;
+            height: 500px;
+            border: 1px solid red;
+        }
+        .four{
+            height: 100px;
+            background: yellow;
+            /* 父元素的最后 */
+            /* 清除之前的浮动造成的影响，让浮动元素占位置 */
+            clear: both;
+        }
+        .clearFix::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <!--套父盒子 给浮动占位置-->
+    <div class="box clearFix">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+        <div class="four"></div>
+    </div>
+    <div class="main"></div>
+</body>
+</html>

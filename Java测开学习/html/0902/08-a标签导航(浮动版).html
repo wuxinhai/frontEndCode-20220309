@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .box{
+            height: 30px;
+            background: pink;
+        }
+        .box ul{
+            width: 550px;
+            margin: 0 auto;
+        }
+        .box ul li{
+            float: left;
+            margin-left: 10px;
+        }
+        .box ul li a{
+            display: block;
+            width: 100px;
+            height: 30px;
+            background: yellow;
+            text-align: center;
+            line-height: 30px;
+            text-decoration: none;
+        }
+        .box ul li a:hover{
+            color: red;
+        }
+        .clearFix::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        /*
+        seo:搜索引擎优化，如果将多个a标签堆积在一起，搜索引擎会认为是在作弊.
+        浮动元素不在具备之前的显示模式，在不设置宽高时，宽高是由内容决定的
+        */
+    </style>
+</head>
+<body>
+    <div class="box">
+        <!-- 要给父元素清除浮动造成的影响 -->
+        <ul class="clearFix">
+            <li>
+                <a href="##">导航</a>
+            </li>
+            <li>
+                <a href="##">导航</a>
+            </li>
+            <li>
+                <a href="##">导航</a>
+            </li>
+            <li>
+                <a href="##">导航</a>
+            </li>
+            <li>
+                <a href="##">导航</a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
