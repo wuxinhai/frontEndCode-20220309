@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            border: 3px solid black;
+        }
+        .box .box1{
+            width: 100px;
+            height: 100px;
+            background: red;
+            float: left;
+        }
+        .box .box2{
+            width: 200px;
+            height: 200px;
+            background: blue;
+            float: left;
+        }
+        .box .box3{
+            width: 300px;
+            height: 300px;
+            background: yellow;
+            float: left;
+        }
+        /*解决浮动造成的影响*/
+        .clearFix::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="box clearFix">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+.header-wrap{
+    height: 30px;
+    background: #EAEAEA;
+}
+.header{
+    width: 1200px;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 auto;
+}
+.header .list-left{
+    float: left;
+}
+.header .list-left li{
+    float: left;
+}
+.header .list-left li a{
+    display: block;
+}
+.header .list-left .line{
+    float: left;
+    width: 1px;
+    height: 16px;
+    background: #B3AEAE;
+    margin: 7px 5px 0 0;
+}
+.header .list-right{
+    float: right;
+}
+.logoAndSearch{
+    width: 1200px;
+    height: 106px;
+    background: pink;
+    margin: 0 auto;
+}
+.logoAndSearch .logo{
+    float: left;
+    height: 56px;
+    margin: 25px 0 0 45px;
+    overflow: hidden;
+}
+.logoAndSearch .logo a{
+    display: block;
+}
