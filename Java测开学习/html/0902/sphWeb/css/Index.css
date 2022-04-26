@@ -13,6 +13,7 @@
 }
 .header .list-left li{
     float: left;
+    height: 30px;
 }
 .header .list-left li a{
     display: block;
@@ -37,8 +38,65 @@
     float: left;
     height: 56px;
     margin: 25px 0 0 45px;
-    overflow: hidden;
+    /* 插入图方式使用 */
+    /* overflow: hidden; */
 }
 .logoAndSearch .logo a{
     display: block;
+    width: 175px;
+    height: 56px;
+    /* 背景图方式 */
+    background: url(../img/Logo.png) no-repeat 0 0;
+    /* 首行缩进 */
+    text-indent: -9999px;
 }
+.logoAndSearch-center{
+    width: 560px;
+    height: 100px;
+    background: yellow;
+    float: left;
+}
+.logoAndSearch-center .baby li{
+    float: left;
+    width: 36px;
+    height: 22px;
+    line-height: 22px;
+    text-align: center;
+    color: #EA4A36;
+    /* cup tab键 */
+    cursor: pointer;
+}
+
+.logoAndSearch-center .baby .current{
+    font-weight: 700;
+    color: #fff;
+    /* 提权 */
+    background: #EA4A36 !important;
+}
+
+.logoAndSearch-center .baby li:hover{
+    background: #FFEEE5;
+}
+/* 输入框 */
+.logoAndSearch-center .sub form .txt{
+    width: 477px;
+    height: 28px;
+    border: 1px solid #EA4A36;
+    border-right: none;
+    float: left;
+    background: url(../img/fang.png) no-repeat 15px center;
+    padding-left: 10px;
+    /* 圆角属性 */
+    /* 左上 右上 右下 左下*/
+    border-radius: 20px 0 0 20px;
+}
+/* 搜索按钮 */
+.logoAndSearch-center .sub form .btn{
+    float: left;
+    width: 70px;
+    height: 32px;
+    background: #EA4A36;
+    color: #fff;
+    border-radius: 0 20px 20px 0;
+}
+
