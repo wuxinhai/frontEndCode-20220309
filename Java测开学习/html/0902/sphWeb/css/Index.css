@@ -31,7 +31,6 @@
 .logoAndSearch{
     width: 1200px;
     height: 106px;
-    background: pink;
     margin: 0 auto;
 }
 .logoAndSearch .logo{
@@ -51,10 +50,8 @@
     text-indent: -9999px;
 }
 .logoAndSearch-center{
-    width: 560px;
-    height: 100px;
-    background: yellow;
     float: left;
+    margin: 10px 0 0 35px;
 }
 .logoAndSearch-center .baby li{
     float: left;
@@ -81,7 +78,7 @@
 .logoAndSearch-center .sub form .txt{
     width: 477px;
     height: 28px;
-    border: 1px solid #EA4A36;
+    border: 2px solid #EA4A36;
     border-right: none;
     float: left;
     background: url(../img/fang.png) no-repeat 15px center;
@@ -98,5 +95,70 @@
     background: #EA4A36;
     color: #fff;
     border-radius: 0 20px 20px 0;
+}
+.logoAndSearch-center .shopping{
+    margin-top: 8px;
+}
+.logoAndSearch-center .shopping li{
+    float: left;
+    margin-right: 5px;
+}
+.all-wrap{
+    height: 45px;
+    border-bottom: 2px solid #EA4A36;
+}
+.all{
+    width: 1200px;
+    height: 45px;
+    margin: 0 auto;
+}
+.all h2{
+    width: 210px;
+    height: 45px;
+    color: #FFFFFF;
+    font-size: 14px;
+    line-height: 45px;
+    text-align: center;
+    background: #EA4A36;
+    float: left;
+    font-weight: 700;
+}
+.all ul{
+    float: left;
+}
+.all ul li{
+    float: left;
+    font-size: 16px;
+    color: #333;
+    line-height: 45px;
+    margin: 0 23px;
+}
+/* 主体 */
+.main{
+    width: 1200px;
+    height: 461px;
+    background: yellow;
+    margin: 0 auto;
+}
+.main .detail{
+    width: 210px;
+    height: 461px;
+    background: #FAFAFA;
+    float: left;
+}
+/* 左边类目 */
+.main .detail ul li{
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 20px;
+    /* 溢出隐藏 */
+    overflow: hidden;
+}
+.main .detail ul li:hover{
+    background: darkgray;
+}
+.main .detail ul li a:hover{
+    text-decoration: underline;
 }
 

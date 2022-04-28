@@ -61,6 +61,10 @@ input,button{
     outline: none;
     border: none;
 }
+input{
+    /* 去掉表单的默认内边距 */
+    padding: 0;
+}
 
 
 
