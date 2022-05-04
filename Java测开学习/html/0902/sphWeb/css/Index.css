@@ -161,4 +161,139 @@
 .main .detail ul li a:hover{
     text-decoration: underline;
 }
+.phone {
+	width: 1200px;
+	height: 330px;
+	margin: 0 auto;
+}
 
+.phone>.box {
+	width: 269px;
+	height: 328px;
+	border: 1px solid #e1251b;
+	float: left;
+	margin-right: 24px;
+	
+}
+
+.phone>.box a {
+	display: block;
+	height: 328px;
+	text-decoration: none;
+}
+
+.phone>.box .top {
+	height: 233px;
+	background: #fff;
+	overflow: hidden;
+}
+
+.phone>.box .top img {
+	margin: 11px auto 0;
+}
+
+.phone>.box a p {
+	font-size: 12px;
+	color: #333;
+	padding-left: 10px;
+	line-height: 28px;
+}
+
+.phone>.box a h3 {
+	font-weight: 400;
+	font-size: 20px;
+	color: #e1251b;
+	padding-left: 10px;
+}
+
+.phone>.box a:hover p {
+	text-decoration: underline;
+	color: yellowgreen;
+}
+
+.menu{
+    width: 1200px;
+    height: 340px;
+    background: gray;
+    margin: 10px auto 0;
+}
+.menu .sq{
+    width: 290px;
+    height: 340px;
+    background: #fff;
+    float: left;
+    margin-left: 200px;
+}
+.menu .sq .top{
+    margin: 13px 0 0 19px;
+}
+.menu .sq .top h3{
+    float: left;
+    font-size: 24px;
+    color: #333;
+    font-weight: 700;
+}
+.menu .sq .top span{
+    float: left;
+    width: 14px;
+    height: 14px;
+    border: 1px solid #E8554D;
+    /* 设置圆角 */
+    border-radius: 50%;
+    margin: 8px 0 0 10px;
+}
+.menu .center{
+    margin-top: 10px;
+}
+.menu .center li{
+    float: left;
+    margin-right: 8px;
+}
+.menu .center li a{
+    display: block;
+    width: 62px;
+    height: 20px;
+    background: #f6f6f6;
+    color: #999;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 20px;
+    /* 强制不换行 */
+    white-space: nowrap;
+    overflow: hidden;
+    /* 用省略号代替溢出的部分 */
+    text-overflow: ellipsis;
+}
+.menu .center li a:hover{
+    color: #FFFFFF;
+    background: #E1251B;
+}
+.menu .center li .current{
+    color: #FFFFFF;
+    background: #E1251B;
+}
+.menu .bottom li{
+    height: 70px;
+    padding: 0 15px;
+    margin-bottom: 10px;
+}
+.menu .bottom li a{
+    display: block;
+    height: 70px;
+}
+.menu .bottom li a img{
+    float: left;
+}
+.menu .bottom li a .img01{
+    margin-top: 15px;
+    margin-right: 12px;
+}
+.menu .bottom li a p{
+    float: right;
+    width: 140px;
+    height: 36px;
+    line-height: 18px;
+    overflow: hidden;
+    font-size: 14px;
+    margin-top: 17px;
+}
