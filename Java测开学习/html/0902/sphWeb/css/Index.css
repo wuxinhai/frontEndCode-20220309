@@ -217,14 +217,15 @@
     background: gray;
     margin: 10px auto 0;
 }
-.menu .sq{
+.menu>div{
     width: 290px;
     height: 340px;
     background: #fff;
     float: left;
     margin-left: 200px;
+    border: 1px solid blue;
 }
-.menu .sq .top{
+.menu .sq .top,.menu .ticket .top{
     margin: 13px 0 0 19px;
 }
 .menu .sq .top h3{
@@ -297,3 +298,117 @@
     font-size: 14px;
     margin-top: 17px;
 }
+/* 领券中心 */
+.menu .ticket{
+    float: left;
+    width: 290px;
+    height: 340px;
+    background: #fff;
+    margin-left: 10px;
+}
+
+.menu .ticket .top h3{
+    float: left;
+    color: #333;
+    font-size: 24px;
+    font-weight: 700;
+}
+.menu .ticket .top span{
+    float: left;
+    width: 14px;
+    height: 14px;
+    border: 1px solid #E8554D;
+    /* 设置圆角 */
+    border-radius: 50%;
+    margin: 8px 0 0 10px;
+}
+.menu .ticket .ticket-list{
+    float: left;
+    width: 290px;
+    height: 280px;
+    background: url(../img/bg.png) no-repeat 0 0;
+    margin-top: 16px;
+}
+.menu .ticket-list ul li{
+    padding: 0 15px;
+}
+.menu .ticket-list ul li a{
+    display: block;
+    height: 82px;
+}
+.menu .ticket-list ul li a .circle{
+    width: 66px;
+    height: 66px;
+    background: #fff url(../img/shop.webp) no-repeat center center;
+    border-radius: 50%;
+    float: left;
+    margin: 8px 0 0 7px;
+}
+.menu .ticket-list ul li a .description{
+    float: left;
+    color: #E8554D;
+    margin-left: 7px;
+}
+.menu .ticket-list ul li a .description .money i{
+    font-size: 14px;
+    font-family: arial,sans-serif;
+}
+.menu .ticket-list ul li a .description .money span{
+    font-size: 28px;
+    font-family: impact,sans-serif;
+
+}
+.menu .ticket-list ul li a .description .nine{
+    color: #999;
+}
+.menu .ticket-list ul li a .description .home{
+    color: #333;
+    margin-top: 6px;
+}
+/* .menu .ticket-list ul li a .gd{
+    float: right;
+    width: 42px;
+    height: 87px;
+    margin: 9px 11px 0 27px;
+} */
+.menu .ticket-list ul li a .gd h4{
+    float: left;
+    width: 12px;
+    color: #666;
+    line-height: 15px;
+    margin-top: 13px;
+    margin-left: 27px;
+}
+
+.menu .ticket-list ul li a .gd em{
+    float: left;
+    margin: 33px 0 0 9px;
+    color: #666;
+}
+.menu .ticket-list ul li a:hover{
+    color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
