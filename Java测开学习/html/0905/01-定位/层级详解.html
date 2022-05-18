@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        /* 
+        层级：当层级相同时，后写的标签连同子元素，都会压在先写的标签连同子元素的上面，父元素的层级
+        将决定子元素的层级的高低。
+        当层级不同时，较大层级的标签连同子元素，都会压在较低层级的标签连同子元素的上面，父元素的层级
+        将决定子元素的层级的高低。
+
+        当不设置z-index，后写的标签连同子元素会压在先写的标签连同子元素的上面，但是此时子元素的层级的高低，将决定自身是否能压在后面标签的上面。
+
+        */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box1{
+            width: 200px;
+            height: 200px;
+            background: red;
+            position: relative;
+            top: 0px;
+            z-index: 0;
+        }
+        .box1 span{
+            width: 100px;
+            height: 30px;
+            background: yellow;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        .box2{
+            width: 200px;
+            height: 200px;
+            background: blue;
+            position: relative;
+            top: 10px;
+            z-index: 0;
+        }
+        .box2 span{
+            width: 100px;
+            height: 30px;
+            background: green;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <span>1</span>
+    </div>
+    <div class="box2">
+        <span>2</span>
+    </div>
+</body>
+</html>

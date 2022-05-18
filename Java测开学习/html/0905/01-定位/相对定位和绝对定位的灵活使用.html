@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        /* 当元素设置绝对定位后，设置宽高起作用 */
+        /* 
+        绝对定位的参考点：绝对定位的起始参考点是设置相对定位的父元素(离自身最近的)，如果没有设置相对定位的父元素，默认参考点是body初始包含块。
+
+        子绝父相：父子指的是标签关系，绝指的是子元素是绝对定位，相指的是父元素是相对定位
+        */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            width: 100px;
+            height: 500px;
+            border: 1px solid #000;
+            margin: 0 auto;
+            /* 相对定位 */
+            position: relative;
+        }
+        span{
+            width: 100px;
+            height: 30px;
+            background: red;
+            /* 绝对定位 */
+            position: absolute;
+            left: 500px;
+            top: 80px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈老刘哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈!!!
+    </div>
+    <span></span>
+</body>
+</html>

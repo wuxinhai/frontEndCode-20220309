@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        /*
+        绝对定位：是一个完全脱离标准流的状态，默认起始参考点是浏览器的第一屏或者初始包含块
+
+        偏移量：
+        水平偏移量
+        left  正值向右，负值向左  优先
+        right 正值向左，负值向右
+        垂直偏移量
+        top 正值向下，负值向上    优先
+        bottom 正值向上，负值向下
+        */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            width: 200px;
+            height: 200px;
+            background: yellowgreen;
+            margin-bottom: 20px;
+        }
+        img{
+            /* 绝对定位 */
+            position: absolute;
+            /* 偏移量 */
+            left: 0;
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- 定位：将元素设置在网页的一个具体的坐标位置 -->
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <img src="./bg.png" alt="图片加载失败">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</body>
+</html>

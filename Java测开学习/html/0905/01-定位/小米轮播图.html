@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        /*
+        开启bfc：block  formatting  context(块级格式化上下文)：是一个独立的渲染区域，脱离标准流
+        1.overflow：hidden,scroll
+        2.float：left/right
+        3.position：absolute，fixed
+        */
+
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        img{
+            display: block;
+        }
+
+        .box{
+            width: 1226px;
+            height: 460px;
+            background: pink;
+            margin: 100px auto;
+            position: relative;
+        }
+        /* .box .three{ */
+            /* 占位隐藏 */
+            /* visibility: hidden; */
+            /* 不占位隐藏 */
+            /* display: none; */
+        /* } */
+
+        .box .leftNav{
+            width: 234px;
+            height: 460px;
+            background: #000;
+            position: absolute;
+            left: 0;
+            top: 0;
+            /* 第一种:透明属性，取值范围是0-1之间的小数,默认值是1 */
+            /* opacity: 0.5; */
+            /* 第二种:CSS3中的属性 */
+            background: rgba(0, 0, 0, 0.5);
+            color: red;
+        }
+        .box>span{
+            width: 41px;
+            height: 69px;
+            background: pink;
+            position: absolute;
+            left: 234px;
+            top: 50%;
+            margin-top: -35px;
+            text-align: center;
+            line-height: 69px;
+            font-size: 30px;
+            cursor: pointer;
+        }
+        .box .rightBtn{
+            /* 让left值失效 */
+            left: auto;
+            right: 0;
+        }
+        .box ol{
+            position: absolute;
+            right: 34px;
+            bottom: 34px;
+        }
+        .box ol li{
+            float: left;
+        }
+        .box ol li{
+            float: left;
+            width: 6px;
+            height: 6px;
+            border: 2px solid #fff;
+            /* 色饱和度 */
+            border-color: hsla(0, 0%, 100%, .3);
+            background: rgba(0, 0, 0, .4);
+            border-radius: 50%;
+            margin-left: 8px;
+        }
+        .box ol .current{
+            /* background: #fff; */
+            /* 背景裁剪属性 */
+            /* background-clip: content-box; */
+            background: hsla(0, 0%, 100%, .4);
+            border-color: rgba(0, 0, 0, .4);
+        }
+        .box ol li:hover{
+            background: #fff;
+            /* 背景裁剪属性 */
+            background-clip: content-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <ul>
+            <li>
+                <a href="##">
+                    <img src="bannar5.webp" alt="加载失败">
+                </a>
+            </li>
+        </ul>
+        <!-- 侧导航 -->
+        <div class="leftNav">
+            
+        </div>
+        <!-- 按钮 -->
+        <span class="leftBtn">&lt;</span>
+        <span class="rightBtn">&gt;</span>
+        <!-- 小圆点 -->
+        <ol>
+            <li class="current"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ol>
+    </div>
+</body>
+</html>
