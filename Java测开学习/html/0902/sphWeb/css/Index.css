@@ -144,9 +144,11 @@
 /* 主体 */
 .main{
     width: 1200px;
-    height: 461px;
-    background: yellow;
+    height: 460px;
+    /* background: yellow; */
     margin: 0 auto;
+    position: relative;
+    overflow: hidden;
 }
 .main .detail{
     width: 210px;
@@ -169,6 +171,106 @@
 .main .detail ul li a:hover{
     text-decoration: underline;
 }
+.main .banner-list{
+    width: 730px;
+    height: 454px;
+    float: left;
+    margin: 5px 0 0 5px;
+}
+.main .banner-list{
+    position: relative;
+}
+.main .banner-list>span{
+    width: 20px;
+    height: 30px;
+    background: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    font-size: 24px;
+    border-radius: 0 15px 15px 0;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -15px;
+    display: none;
+}
+.main .banner-list:hover span{
+    display: block;
+}
+.main .banner-list .rightBtn{
+    left: auto;
+    right: 0;
+    border-radius: 15px 0 0 15px;
+}
+
+.main .banner-list>ol{
+    position: absolute;
+    left: 50%;
+    margin-left: -35px;
+    bottom: 15px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+}
+
+.main .banner-list>ol>li{
+    float: left;
+    width: 8px;
+    height: 8px;
+    margin: 3px 3px 2px 3px;
+    background: #fff;
+    border-radius: 50%;
+}
+
+.main .banner-list>ol li.current{
+    background: orange;
+}
+
+.main .right-list{
+    width: 250px;
+    height: 452px;
+    background: #FFFFFF;
+    position: absolute;
+    left: auto;
+    right: 0;
+    border: 1px solid #E4E4E4;
+    margin-top: 5px;
+}
+
+.main .right-list .news-list .news-title{
+    height: 37px;
+    line-height: 37px;
+    font-size: 16px;
+    font-family: "宋体";
+    border-bottom: 1px solid #E4E4E4;
+    margin: 0 5px 0 5px;
+}
+
+.main .right-list .news-list .news-title h3{
+    font-weight: 700;
+    margin-left: 10px;
+    
+}
+
+.main .right-list .news-list .news-title h3>a{
+    font-size: 12px;
+    margin-left: 106px;
+}
+
+.main .news-list ul{
+    height: 140px;
+    line-height: 28px;
+    font-size: 14px;
+    font-family: "宋体";
+    border-bottom: 1px solid #E4E4E4;
+}
+.main .news-list ul li{
+    margin-left: 15px;
+}
+.main .news-list ul li a>span{
+    font-weight: 700;
+}
+
 .phone {
 	width: 1200px;
 	height: 330px;

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        /*
+        交集选择器：同时具备多个选择器条件
+        */
+        /* p.current{
+            border: 1px solid red;
+        } */
+        /* .one.current{
+            border: 1px solid red;
+        } */
+        .list li.current{
+            border: 1px solid red; 
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <p class="current one">段落</p>
+        <p class="current">段落</p>
+        <i class="current">倾斜</i>
+        <span>span</span>
+        <ul class="list">
+            <li class="current">1</li>
+            <li>2</li>
+            <li>3</li>
+        </ul>
+        <ol class="list">
+            <li class="current">11</li>
+            <li>22</li>
+            <li>33</li>
+        </ol>
+    </div>
+</body>
+</html>
