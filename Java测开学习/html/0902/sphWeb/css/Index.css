@@ -1,3 +1,13 @@
+body {
+    height: 10000px;
+    /* 溢出隐藏 */
+    /* 
+    overflow-x: hidden;  水平隐藏
+    overflow-y: hidden;  溢出隐藏
+    */
+    overflow-x: hidden;
+}
+
 .header-wrap{
     height: 30px;
     background: #EAEAEA;
@@ -119,6 +129,26 @@
     width: 1200px;
     height: 45px;
     margin: 0 auto;
+    /* 相对定位 */
+    position: relative;
+}
+.man{
+    width: 360px;
+    height: 800px;
+    background: url(../img/man.png) no-repeat 0 0;
+    /* 绝对定位 */
+    position: absolute;
+    left: -360px;
+    top: 0;
+}
+.woman{
+    width: 360px;
+    height: 800px;
+    background: url(../img/woman.png) no-repeat 0 0;
+    /* 绝对定位 */
+    position: absolute;
+    right: -360px;
+    top: 0;
 }
 .all h2{
     width: 210px;
@@ -229,11 +259,13 @@
 .main .right-list{
     width: 250px;
     height: 452px;
+    float: right;
     background: #FFFFFF;
     position: absolute;
     left: auto;
     right: 0;
     border: 1px solid #E4E4E4;
+    border-bottom: none;
     margin-top: 5px;
 }
 
@@ -257,20 +289,36 @@
     margin-left: 106px;
 }
 
-.main .news-list ul{
+.main .news-list .news{
     height: 140px;
     line-height: 28px;
     font-size: 14px;
     font-family: "宋体";
     border-bottom: 1px solid #E4E4E4;
 }
-.main .news-list ul li{
+.main .news-list .news li{
     margin-left: 15px;
 }
-.main .news-list ul li a>span{
+.main .news-list .news li a>span{
     font-weight: 700;
 }
-
+.main .news-list .list ul li{
+    width: 61px;
+    height: 64px;
+    border-right: 1px solid #E4E4E4;
+    border-bottom: 1px solid #E4E4E4;
+    float: left;
+}
+.main .news-list .list ul .width62{
+    width: 63px;
+    border-right: none;
+}
+.main .news-list .list ul li a{
+    display: block;
+    /* 跟随父元素高度百分比 */
+    height: 100%;
+    background: url(../img/icons.png) no-repeat 0 0;
+}
 .phone {
 	width: 1200px;
 	height: 330px;
@@ -493,7 +541,28 @@
     margin: 33px 0 0 9px;
     color: #666;
 }
-
+.advLeftBottom{
+    width: 360px;
+    height: 570px;
+    background: url(../img/qiuLeft.png) no-repeat 0 0;
+    /* 固定定位 */
+    position: fixed;
+    left: 50%;
+    margin-left: -960px;
+    bottom: 0;
+    z-index: -1;
+}
+.advRightBottom{
+    width: 360px;
+    height: 570px;
+    background: url(../img/qiuRight.png) no-repeat 0 0;
+    /* 固定定位 */
+    position: fixed;
+    left: 50%;
+    margin-left: 600px;
+    bottom: 0;
+    z-index: -1;
+}
 
 
 

@@ -1,0 +1,44 @@
+{
+  "id": "3436567",
+  "name": "前端学习",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "834840",
+      "name": "微信",
+      "font_class": "weixin",
+      "unicode": "e64c",
+      "unicode_decimal": 58956
+    },
+    {
+      "icon_id": "4290524",
+      "name": "中国",
+      "font_class": "zhongguo",
+      "unicode": "e621",
+      "unicode_decimal": 58913
+    },
+    {
+      "icon_id": "5189306",
+      "name": "香蕉",
+      "font_class": "xiangjiao",
+      "unicode": "e605",
+      "unicode_decimal": 58885
+    },
+    {
+      "icon_id": "5221816",
+      "name": "香菜",
+      "font_class": "icon-test",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "15933094",
+      "name": "微信",
+      "font_class": "weixin1",
+      "unicode": "e607",
+      "unicode_decimal": 58887
+    }
+  ]
+}
