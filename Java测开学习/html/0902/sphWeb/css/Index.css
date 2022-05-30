@@ -38,6 +38,23 @@ body {
 .header .list-right{
     float: right;
 }
+.header .list-right li{
+    float: left;
+}
+.header .list-right li>a{
+    float: left;
+}
+.header .list-right li>a>i{
+    float: left;
+    margin-right: 5px;
+}
+.header .list-right li>a>i>span{
+    float: left;
+}
+.header .list-right li>em{
+    float: left;
+    margin-left: 7px;
+}
 .logoAndSearch{
     width: 1200px;
     height: 106px;
