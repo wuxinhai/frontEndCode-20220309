@@ -169,6 +169,65 @@ body {
     height: 365px;
     border: #CCCCCC solid 1px;
     margin: 20px;
+    
 }
+.login-wrap .login-bg .login .box ul{
+    width: 380px;
+    height: 48px;
+}
+.login-wrap .login-bg .login .box ul li{
+    width: 188px;
+    height: 48px;
+    line-height: 48px;
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+    float: left;
+}
+.login-wrap .login-bg .login .box ul li a{
+    display: block;
+    width: 188px;
+}
+.login-wrap .login-bg .login .box ul .bk{
+    border-right: #CCCCCC solid 1px;
+    border-bottom: #CCCCCC solid 1px;
+}
+.login-wrap .login-bg .login .box ul .bb .current{
+    color: #E93854;
+}
+.login-wrap .login-bg .login .box ul .bk a:hover{
+    color: #E93854;
+    border-top: #28A3EF solid 1px;
+}
+.login-wrap .login-bg .login .box ul .bb a:hover{
+    color: #E93854;
+    border-top: #28A3EF solid 1px;
+}
+.login-wrap .login-bg .login .box div span{
+    width: 34px;
+    height: 30px;
+    line-height: 30px;
+    border: #CCCCCC solid 1px;
+    float: left;
+    text-align: center;
+    margin-left: 18px;
+}
+.login-wrap .login-bg .login .box input{
+    width: 298px;
+    height: 30px;
+    line-height: 30px;
+    border: #CCCCCC solid 1px;
+    color: #CCCCCC;
+    float: left;
+}
+
+.login-wrap .login-bg .login .box .pwd-input{
+    margin-top: 15px;
+}
+
+
+
+
+
 
 
