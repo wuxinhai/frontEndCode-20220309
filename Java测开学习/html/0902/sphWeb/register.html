@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/login.css">
+    <link rel="stylesheet" type="text/css" href="css/register.css">
     <link rel="stylesheet" type="" href="./font/iconfont.css">
 </head>
 <body>
@@ -57,59 +58,35 @@
             </div>   
         </div>
     </div>
-    <!-- 登录 -->
-    <div class="login-wrap">
-        <div class="login-bg">
-            <div class="login">
-                <div class="box">
-                    <ul class="clearFix">
-                        <li class="bk">
-                            <a href="##">扫码登录</a>
-                        </li>
-                        <li class="bb">
-                            <a href="##" class="current">帐户登录</a>
-                        </li>
-                    </ul>
-                    <div class="pwd-input clearFix" style="margin-top: 33px;">
-                        <span class="iconfont icon-shoujihao"></span>
-                        <input type="text" placeholder="邮箱/手机号/用户名">
-                    </div>
-                    <div class="pwd-input clearFix">
-                        <span class="iconfont icon-mima1"></span>
-                        <input type="password" placeholder="请输入密码">
-                    </div>
-                    <div class="state clearFix">
-                        <p class="iconfont icon-xuanzhong">自动登录</p>
-                        <p>
-                            <a href="##" style="margin-left: 186px;">忘记密码?</a>
-                        </p>
-                    </div>
-                    <div class="login-button clearFix">
-                        <button>登录</button>
-                    </div>
-                    <ol class="thirdParty-Login clearFix">
-                        <li style="margin-left: 20px;">
-                            <a href="##" class="iconfont icon-QQ-circle-fill"></a>
-                        </li>
-                        <li>
-                            <a href="##" class="iconfont icon-xinlangweibo"></a>
-                        </li>
-                        <li>
-                            <a href="##" class="iconfont icon-weixin"></a>
-                        </li>
-                        <li>
-                            <a href="##" class="iconfont icon-zhifubao" style="margin-right: 100px;"></a>
-                        </li>
-                        <p>
-                            <a href="##">立即注册</a>
-                        </p>
-                    </ol>
-                    
-                </div>
-            </div>
-            <img src="./img/loginbg.png" alt="图片加载失败">
+    <!-- 注册用户 -->
+    <div class="register-wrap">
+        <div class="header">
+            <h3>注册新用户</h3>
+            <span>
+                我有账号,去
+                <a href="##">登录</a>
+            </span>
         </div>
-        
+        <form action="" class="details">
+            <label for="userName">用户名</label>
+            <input type="text" placeholder="请输入用户名" id="userName">
+            <br>
+            <label for="mobilePhone">手机号</label>
+            <input type="text" placeholder="请输入手机号" id="mobilePhone">
+            <br>
+            <label for="code">验证码</label>
+            <input type="text" placeholder="请输入验证码" id="code">
+            <br>
+            <label for="pwd" class="four">密码</label>
+            <input type="password" placeholder="请输入密码" id="pwd" style="margin-left: 36px">
+        </form>
+        <span class="iconfont icon-xuanzhong">
+            同意协议并注册
+            <a href="##">《尚品汇用户协议》</a>
+        </span>
+        <div class="sub">
+            <button>完成注册</button>
+        </div>
     </div>
     <ul class="end">
         <li>

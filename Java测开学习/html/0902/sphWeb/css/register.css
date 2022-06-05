@@ -141,117 +141,98 @@ body {
     float: left;
     margin-right: 5px;
 }
-.login-wrap .login-bg{
-    height: 490px;
-    background: #E93854;
-}
-.login-bg .login{
-    width: 420px;
-    height: 407px;
-    border: #FFFFFF solid 1px;
-    background: #FFFFFF;
-    float: right;
-    /* margin: 40px 352px 40px 276px; */
-    position: absolute;
-    right: 351px;
-    top: 176px;
-    z-index: 1;
-}
-.login-wrap .login-bg img{
-    display: block;
+.register-wrap{
+    width: 1200px;
+    height: 450px;
+    border: #B3AEAE solid 1px;
     margin: 0 auto;
-    position: absolute;
-    left: 278px;
-    top: 136px;
 }
-.login-wrap .login-bg .login .box{
-    width: 380px;
-    height: 365px;
-    border: #CCCCCC solid 1px;
-    margin: 20px;
-    
+.register-wrap .header{
+    width: 1200px;
+    height: 40px;
+    background: #ECECEC;
+    margin-bottom: 40px;
 }
-.login-wrap .login-bg .login .box ul{
-    width: 380px;
-    height: 48px;
-}
-.login-wrap .login-bg .login .box ul li{
-    width: 188px;
-    height: 48px;
-    line-height: 48px;
-    font-size: 28px;
-    font-weight: 700;
-    text-align: center;
-    float: left;
-}
-.login-wrap .login-bg .login .box>ul li a{
-    float: left;
-    width: 188px;
-}
-.login-wrap .login-bg .login .box ul .bk{
-    border-right: #CCCCCC solid 1px;
-    border-bottom: #CCCCCC solid 1px;
-}
-.login-wrap .login-bg .login .box ul .bb .current{
-    color: #E93854;
-}
-.login-wrap .login-bg .login .box ul .bk a:hover{
-    color: #E93854;
-    border-top: #28A3EF solid 1px;
-}
-.login-wrap .login-bg .login .box ul .bb a:hover{
-    color: #E93854;
-    border-top: #28A3EF solid 1px;
-}
-.login-wrap .login-bg .login .box div span{
-    width: 34px;
-    height: 30px;
-    line-height: 30px;
-    font-size: 24px;
-    border: #CCCCCC solid 1px;
-    float: left;
-    text-align: center;
-    margin-left: 18px;
-}
-.login-wrap .login-bg .login .box input{
-    width: 298px;
-    height: 30px;
-    line-height: 30px;
-    border: #CCCCCC solid 1px;
-    color: #CCCCCC;
-    float: left;
-}
-.login-wrap .login-bg .login .box .pwd-input{
-    margin-top: 15px;
-}
-.login-wrap .login-bg .login .box .state{
-    margin: 12px 0 0 18px;
-}
-.login-wrap .login-bg .login .box .state p{
-    float: left;
-    font-size: 16px;
-}
-.login-button button{
-    width: 336px;
-    height: 30px;
+.register-wrap .header h3{
+    height: 40px;
+    line-height: 40px;
     font-size: 18px;
-    color: #FFFFFF;
-    margin: 28px 0 32px 18px;
-    background-color: #E93854;
-}
-.thirdParty-Login li a{
+    font-weight: 700;
     float: left;
-    font-size: 36px;
-    margin-right: 12px;
+    margin-left: 12px;
 }
-.thirdParty-Login li a:hover{
-    border-top: #28A3EF solid 1px;
+.register-wrap .header span{
+    float: right;
+    line-height: 40px;
 }
-.thirdParty-Login p a{
-    font-size: 14px;
-    line-height: 46px;
-    margin-right: 18px;
+.register-wrap .header span a{
+    color: #EA4A36;
+    font-weight: 700;
+    margin-right: 16px;
 }
+.details{
+    text-align: center;
+}
+.details input{
+    width: 270px;
+    height: 38px;
+    border: #999999 solid 1px;
+    margin-bottom: 18px;
+}
+.details .four{
+    position: absolute;
+    left: 807px;
+    top: 405px;
+}
+.register-wrap .iconfont{
+    font-size: 10px;
+    margin-left: 487px;
+}
+.register-wrap .sub button{
+    width: 270px;
+    height: 38px;
+    line-height: 38px;
+    color: #fff;
+    background: #E1251B;
+    margin: 13px 0 0 487px;
+    text-align: center;
+}
+.register-wrap .sub button:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .end{
     width: 1200px;
     height: 24px;
@@ -285,12 +266,3 @@ body {
     font-size: 12px;
     text-indent: 2em;
 }
-
-
-
-
-
-
-
-
-
