@@ -1,0 +1,296 @@
+body {
+    height: 10000px;
+    /* 溢出隐藏 */
+    /* 
+    overflow-x: hidden;  水平隐藏
+    overflow-y: hidden;  溢出隐藏
+    */
+    overflow-x: hidden;
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+.header-wrap{
+    height: 30px;
+    background: #EAEAEA;
+}
+.header{
+    width: 1200px;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 auto;
+}
+.header .list-left{
+    float: left;
+}
+.header .list-left li{
+    float: left;
+    height: 30px;
+}
+.header .list-left li a{
+    display: block;
+}
+.header .list-left .line{
+    float: left;
+    width: 1px;
+    height: 16px;
+    background: #B3AEAE;
+    margin: 7px 5px 0 0;
+}
+.header .list-right{
+    float: right;
+}
+.header .list-right li{
+    float: left;
+}
+.header .list-right li>a{
+    float: left;
+}
+.header .list-right li>a>i{
+    float: left;
+    margin-right: 5px;
+}
+.header .list-right li>a>i>span{
+    float: left;
+}
+.header .list-right li>em{
+    float: left;
+    margin-left: 7px;
+}
+.logoAndSearch{
+    width: 1200px;
+    height: 106px;
+    margin: 0 auto;
+}
+.logoAndSearch .logo{
+    float: left;
+    height: 56px;
+    margin: 25px 0 0 45px;
+    /* 插入图方式使用 */
+    /* overflow: hidden; */
+}
+.logoAndSearch .logo a{
+    display: block;
+    width: 175px;
+    height: 56px;
+    /* 背景图方式 */
+    background: url(../img/Logo.png) no-repeat 0 0;
+    /* 首行缩进 */
+    text-indent: -9999px;
+}
+.logoAndSearch-center{
+    float: right;
+    margin: 40px 0 0 35px;
+}
+.logoAndSearch-center .baby li{
+    float: left;
+    width: 36px;
+    height: 22px;
+    line-height: 22px;
+    text-align: center;
+    color: #EA4A36;
+    /* cup tab键 */
+    cursor: pointer;
+    /* 相对定位 */
+    position: relative;
+}
+
+.logoAndSearch-center .baby li img{
+    position: absolute;
+    left: 20px;
+    top: -20px;
+}
+
+.logoAndSearch-center .baby .current{
+    font-weight: 700;
+    color: #fff;
+    /* 提权 */
+    background: #EA4A36 !important;
+}
+
+.logoAndSearch-center .baby li:hover{
+    background: #FFEEE5;
+}
+/* 输入框 */
+.logoAndSearch-center .sub form .txt{
+    width: 477px;
+    height: 28px;
+    border: 2px solid #EA4A36;
+    border-right: none;
+    float: left;
+    background: url(../img/fang.png) no-repeat 15px center;
+    padding-left: 10px;
+    /* 圆角属性 */
+    /* 左上 右上 右下 左下*/
+    border-radius: 20px 0 0 20px;
+}
+/* 搜索按钮 */
+.logoAndSearch-center .sub form .btn{
+    float: left;
+    width: 70px;
+    height: 32px;
+    background: #EA4A36;
+    color: #fff;
+    border-radius: 0 20px 20px 0;
+}
+.logoAndSearch-center .shopping{
+    margin-top: 8px;
+}
+.logoAndSearch-center .shopping li{
+    float: left;
+    margin-right: 5px;
+}
+.login-wrap .login-bg{
+    height: 490px;
+    background: #E93854;
+}
+.login-bg .login{
+    width: 420px;
+    height: 407px;
+    border: #FFFFFF solid 1px;
+    background: #FFFFFF;
+    float: right;
+    /* margin: 40px 352px 40px 276px; */
+    position: absolute;
+    right: 351px;
+    top: 176px;
+    z-index: 1;
+}
+.login-wrap .login-bg img{
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    left: 278px;
+    top: 136px;
+}
+.login-wrap .login-bg .login .box{
+    width: 380px;
+    height: 365px;
+    border: #CCCCCC solid 1px;
+    margin: 20px;
+    
+}
+.login-wrap .login-bg .login .box ul{
+    width: 380px;
+    height: 48px;
+}
+.login-wrap .login-bg .login .box ul li{
+    width: 188px;
+    height: 48px;
+    line-height: 48px;
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+    float: left;
+}
+.login-wrap .login-bg .login .box>ul li a{
+    float: left;
+    width: 188px;
+}
+.login-wrap .login-bg .login .box ul .bk{
+    border-right: #CCCCCC solid 1px;
+    border-bottom: #CCCCCC solid 1px;
+}
+.login-wrap .login-bg .login .box ul .bb .current{
+    color: #E93854;
+}
+.login-wrap .login-bg .login .box ul .bk a:hover{
+    color: #E93854;
+    border-top: #28A3EF solid 1px;
+}
+.login-wrap .login-bg .login .box ul .bb a:hover{
+    color: #E93854;
+    border-top: #28A3EF solid 1px;
+}
+.login-wrap .login-bg .login .box div span{
+    width: 34px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 24px;
+    border: #CCCCCC solid 1px;
+    float: left;
+    text-align: center;
+    margin-left: 18px;
+}
+.login-wrap .login-bg .login .box input{
+    width: 298px;
+    height: 30px;
+    line-height: 30px;
+    border: #CCCCCC solid 1px;
+    color: #CCCCCC;
+    float: left;
+}
+.login-wrap .login-bg .login .box .pwd-input{
+    margin-top: 15px;
+}
+.login-wrap .login-bg .login .box .state{
+    margin: 12px 0 0 18px;
+}
+.login-wrap .login-bg .login .box .state p{
+    float: left;
+    font-size: 16px;
+}
+.login-button button{
+    width: 336px;
+    height: 30px;
+    font-size: 18px;
+    color: #FFFFFF;
+    margin: 28px 0 32px 18px;
+    background-color: #E93854;
+}
+.thirdParty-Login li a{
+    float: left;
+    font-size: 36px;
+    margin-right: 12px;
+}
+.thirdParty-Login li a:hover{
+    border-top: #28A3EF solid 1px;
+}
+.thirdParty-Login p a{
+    font-size: 14px;
+    line-height: 46px;
+    margin-right: 18px;
+}
+.end{
+    width: 1200px;
+    height: 24px;
+    margin: 0 auto;
+    position: fixed;
+    left: 50%;
+    margin-left: -400px;
+    bottom: 35px;
+}
+.end li{
+    font-size: 14px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    float: left;
+}
+.end .line{
+    width: 1px;
+    height: 24px;
+    background: #E4E4E4;
+    margin: 0px 25px 0 25px;
+}
+.site{
+    left: 50%;
+    margin: 0 auto;
+    position: fixed;
+    margin-left: -110px;
+    bottom: 5px;
+}
+.site p{
+    font-size: 12px;
+    text-indent: 2em;
+}
+
+
+
+
+
+
+
+
+

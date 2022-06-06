@@ -1,0 +1,268 @@
+body {
+    height: 10000px;
+    /* 溢出隐藏 */
+    /* 
+    overflow-x: hidden;  水平隐藏
+    overflow-y: hidden;  溢出隐藏
+    */
+    overflow-x: hidden;
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+.header-wrap{
+    height: 30px;
+    background: #EAEAEA;
+}
+.header{
+    width: 1200px;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 auto;
+}
+.header .list-left{
+    float: left;
+}
+.header .list-left li{
+    float: left;
+    height: 30px;
+}
+.header .list-left li a{
+    display: block;
+}
+.header .list-left .line{
+    float: left;
+    width: 1px;
+    height: 16px;
+    background: #B3AEAE;
+    margin: 7px 5px 0 0;
+}
+.header .list-right{
+    float: right;
+}
+.header .list-right li{
+    float: left;
+}
+.header .list-right li>a{
+    float: left;
+}
+.header .list-right li>a>i{
+    float: left;
+    margin-right: 5px;
+}
+.header .list-right li>a>i>span{
+    float: left;
+}
+.header .list-right li>em{
+    float: left;
+    margin-left: 7px;
+}
+.logoAndSearch{
+    width: 1200px;
+    height: 106px;
+    margin: 0 auto;
+}
+.logoAndSearch .logo{
+    float: left;
+    height: 56px;
+    margin: 25px 0 0 45px;
+    /* 插入图方式使用 */
+    /* overflow: hidden; */
+}
+.logoAndSearch .logo a{
+    display: block;
+    width: 175px;
+    height: 56px;
+    /* 背景图方式 */
+    background: url(../img/Logo.png) no-repeat 0 0;
+    /* 首行缩进 */
+    text-indent: -9999px;
+}
+.logoAndSearch-center{
+    float: right;
+    margin: 40px 0 0 35px;
+}
+.logoAndSearch-center .baby li{
+    float: left;
+    width: 36px;
+    height: 22px;
+    line-height: 22px;
+    text-align: center;
+    color: #EA4A36;
+    /* cup tab键 */
+    cursor: pointer;
+    /* 相对定位 */
+    position: relative;
+}
+
+.logoAndSearch-center .baby li img{
+    position: absolute;
+    left: 20px;
+    top: -20px;
+}
+
+.logoAndSearch-center .baby .current{
+    font-weight: 700;
+    color: #fff;
+    /* 提权 */
+    background: #EA4A36 !important;
+}
+
+.logoAndSearch-center .baby li:hover{
+    background: #FFEEE5;
+}
+/* 输入框 */
+.logoAndSearch-center .sub form .txt{
+    width: 477px;
+    height: 28px;
+    border: 2px solid #EA4A36;
+    border-right: none;
+    float: left;
+    background: url(../img/fang.png) no-repeat 15px center;
+    padding-left: 10px;
+    /* 圆角属性 */
+    /* 左上 右上 右下 左下*/
+    border-radius: 20px 0 0 20px;
+}
+/* 搜索按钮 */
+.logoAndSearch-center .sub form .btn{
+    float: left;
+    width: 70px;
+    height: 32px;
+    background: #EA4A36;
+    color: #fff;
+    border-radius: 0 20px 20px 0;
+}
+.logoAndSearch-center .shopping{
+    margin-top: 8px;
+}
+.logoAndSearch-center .shopping li{
+    float: left;
+    margin-right: 5px;
+}
+.register-wrap{
+    width: 1200px;
+    height: 450px;
+    border: #B3AEAE solid 1px;
+    margin: 0 auto;
+}
+.register-wrap .header{
+    width: 1200px;
+    height: 40px;
+    background: #ECECEC;
+    margin-bottom: 40px;
+}
+.register-wrap .header h3{
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    font-weight: 700;
+    float: left;
+    margin-left: 12px;
+}
+.register-wrap .header span{
+    float: right;
+    line-height: 40px;
+}
+.register-wrap .header span a{
+    color: #EA4A36;
+    font-weight: 700;
+    margin-right: 16px;
+}
+.details{
+    text-align: center;
+}
+.details input{
+    width: 270px;
+    height: 38px;
+    border: #999999 solid 1px;
+    margin-bottom: 18px;
+}
+.details .four{
+    position: absolute;
+    left: 807px;
+    top: 405px;
+}
+.register-wrap .iconfont{
+    font-size: 10px;
+    margin-left: 487px;
+}
+.register-wrap .sub button{
+    width: 270px;
+    height: 38px;
+    line-height: 38px;
+    color: #fff;
+    background: #E1251B;
+    margin: 13px 0 0 487px;
+    text-align: center;
+}
+.register-wrap .sub button:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.end{
+    width: 1200px;
+    height: 24px;
+    margin: 0 auto;
+    position: fixed;
+    left: 50%;
+    margin-left: -400px;
+    bottom: 35px;
+}
+.end li{
+    font-size: 14px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    float: left;
+}
+.end .line{
+    width: 1px;
+    height: 24px;
+    background: #E4E4E4;
+    margin: 0px 25px 0 25px;
+}
+.site{
+    left: 50%;
+    margin: 0 auto;
+    position: fixed;
+    margin-left: -110px;
+    bottom: 5px;
+}
+.site p{
+    font-size: 12px;
+    text-indent: 2em;
+}
