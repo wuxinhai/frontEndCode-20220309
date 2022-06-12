@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        /* 属性选择器 */
+        /* 表示有class属性名的元素 */
+        div[class]{
+            color: red;
+        }
+        div[title]{
+            color: blue;
+        }
+        /* 表示class属性值等于box的 */
+        div[class="box"]{
+            color: red;
+        }
+        /* 表示class属性值包含box的 */
+        div[class *= "box"]{
+            color: red;
+        }
+        /* 表示class属性值以box开头的 */
+        div[class ^= "box"]{
+            color: red;
+        }
+        /* 表示class属性值以box结束的 */
+        div[class $= "box"]{
+            color: red;
+        }
+        /* 表示class属性值包含独立单词box的 */
+        div[class ~= "box"]{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">卤煮</div>
+    <div class="aaabox">炒肝</div>
+    <div class="boxbbb">豆汁</div>
+    <div class="aaaboxbbb">焦圈</div>
+    <div class="box one">面茶</div>
+    <div title="太苦">咖啡</div>
+    <div title="太甜">拿铁</div>
+</body>
+</html>

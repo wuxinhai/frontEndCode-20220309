@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        /*
+        后代选择器
+        一级后代选择器
+        交集选择器
+        */
+        /* 下一个紧挨着的兄弟元素选择器 */
+        /* h1+b{
+            border: 1px solid red;
+        } */
+
+        /* .one+.bbbb{
+            border: 1px solid red;
+        } */
+
+        /* 后面所有的兄弟选择器 */
+        /* h1~p{
+            border: 1px solid red;
+        } */
+        .one~.two{
+            border: 1px solid red;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <ul>一级ul
+            <li>一级li
+                <ul>二级ul
+                    <li>二级li</li>
+                </ul>
+            </li>
+            <li>
+                一级li
+            </li>
+        </ul>
+        <h1 class="one">标题1</h1>
+        <b class="bbbb">加粗</b>
+        <span>span1</span>
+        <p>段落1</p>
+        <i class="two">倾斜1</i>
+        <p>段落2</p>
+        <i>倾斜2</i>
+        <p class="two">段落3</p>
+    </div>
+</body>
+</html>

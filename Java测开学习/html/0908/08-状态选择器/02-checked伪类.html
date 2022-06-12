@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        input[type="checkbox"]{
+            width: 500px;
+            height: 500px;
+            background: pink;
+            /* 清除表单的默认样式 快捷键：app tab键*/
+            /* 带前缀的属性属于测试阶段的属性，每个内核的实现会有区别，或者根本就没有实现 */
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            /*
+            浏览器       内核               前缀
+            chrome      webkit(blink)          -webkit-
+            safari      webkit                 -webkit-
+            opear       webkit                 -o-
+            firefox     gecko                  -moz-
+            ie          trident                -ms-
+            */
+        }
+        /* checked伪类  选中状态 */
+        input[type="checkbox"]:checked{
+            background: blue;
+                
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox">
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+    视频标签：video
+    source多个文件引入标签
+    属性：
+    src  视频文件路径
+    controls 控制面板
+    loop  循环播放
+    autoplay  自动播放
+    -->
+    <!-- 引入单个文件 -->
+    <video src="../video/WeChat.mp4" controls="controls" loop="loop" autoplay="autoplay"></video>
+    <!-- 引入多个文件 -->
+    <video controls="controls" loop="loop" autoplay="autoplay">
+        <source src="../video/WeChat.mp4"/>
+    </video>
+</body>
+</html>

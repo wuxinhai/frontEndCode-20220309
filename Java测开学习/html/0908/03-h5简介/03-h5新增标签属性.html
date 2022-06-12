@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 禁用属性 disabled三种写法和checked一样 -->
+    <input type="text" disabled="disabled">
+    <input type="button" value="按钮" disabled="disabled">
+    
+    <form action="http://www.baidu.com">
+        <!-- 非空验证 -->
+        <input type="text" required="required">
+        <!-- 自动获取焦点 -->
+        <input type="text" autofocus="autofocus">
+        <!-- 提示文本 -->
+        <input type="text" placeholder="气球">
+        <!-- 自动补全
+             off  关闭
+             on   开启
+             配合name属性使用，根据name的属性值，将成功提交的文本存储到下拉列表
+             name属性的作用
+                1.作为可与服务器交互数据的HTML元素的服务器端的标示，我们可以在服务器端根据其Name取得元素提交的值
+        -->
+        <input type="text" autocomplete="on" name="zzz">
+        <input type="submit" value="提交">
+    </form>
+</body>
+</html>

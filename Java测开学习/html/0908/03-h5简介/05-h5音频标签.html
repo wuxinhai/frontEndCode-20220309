@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+    音频标签：audio
+    source多个文件引入标签
+    属性：
+    src  音频文件路径
+    controls 控制面板
+    loop  循环播放
+    autoplay  自动播放
+    -->
+    <!-- 引入单个文件 -->
+    <!-- <audio src="../music/1.mp3" controls="controls" loop="loop" autoplay="autoplay"></audio> -->
+    <!-- 引入多个文件 -->
+    <audio controls="controls" loop="loop" autoplay="autoplay">
+        <source src="../music/1.mp3"/>
+        <source src="../music/1.mp3"/>
+    </audio>
+</body>
+</html>
