@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        a,img{
+            display: block;
+        }
+        .box{
+            width: 806px;
+            height: 592px;
+            background: pink;
+            margin: 10px auto;
+        }
+        .box .listTop{
+            height: 507px;
+            background: yellow;
+            position: relative;
+        }
+        .box .listTop li{
+            position: absolute;
+            left: 0px;
+            top: 0px;
+        }
+        .box .listTop li a img{
+            width: 806px;
+            height: 507px;
+        }
+        .box .listTop li:nth-of-type(1){
+            z-index: 1;
+        }
+        .box .listBottom{
+            overflow: hidden;
+            margin-top: 5px;
+        }
+        .box .listBottom li{
+            float: left;
+            margin-right: 5px;
+        }
+        .box .listBottom li:last-of-type{
+            margin-right: 0px;
+        }
+        .box .listBottom li a img{
+            width: 130px;
+            height: 80px;
+
+        }
+        /* 大图的li获取目标 */
+        .box .listTop li:target{
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <ul class="listTop">
+            <li id="jd01">
+                <a href="##">
+                    <img src="./img/jd001.jpg">
+                </a>
+            </li>
+            <li id="jd02">
+                <a href="##">
+                    <img src="./img/jd002.jpg">
+                </a>
+            </li>
+            <li id="jd03">
+                <a href="##">
+                    <img src="./img/jd003.jpg">
+                </a>
+            </li>
+            <li id="jd04">
+                <a href="##">
+                    <img src="./img/jd004.jpg">
+                </a>
+            </li>
+            <li id="jd05">
+                <a href="##">
+                    <img src="./img/jd005.jpg">
+                </a>
+            </li>
+            <li id="jd06">
+                <a href="##">
+                    <img src="./img/jd006.jpg">
+                </a>
+            </li>
+        </ul>
+        <ul class="listBottom">
+            <li>
+                <a href="#jd01">
+                    <img src="./img/jd001.jpg">
+                </a>
+            </li>
+            <li>
+                <a href="#jd02">
+                    <img src="./img/jd002.jpg">
+                </a>
+            </li>
+            <li>
+                <a href="#jd03">
+                    <img src="./img/jd003.jpg">
+                </a>
+            </li>
+            <li>
+                <a href="#jd04">
+                    <img src="./img/jd004.jpg">
+                </a>
+            </li>
+            <li>
+                <a href="#jd05">
+                    <img src="./img/jd005.jpg">
+                </a>
+            </li>
+            <li>
+                <a href="#jd06">
+                    <img src="./img/jd006.jpg">
+                </a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

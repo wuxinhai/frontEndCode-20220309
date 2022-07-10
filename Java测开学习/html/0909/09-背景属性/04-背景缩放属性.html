@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        .box{
+            width: 1200px;
+            height: 600px;
+            border: 1px solid #000;
+            background: url(./222.jpg) no-repeat 0 0;
+        }
+        .box:hover{
+            /* 背景缩放属性 */
+            /* 宽度  高度 */
+            background-size: 600px 300px;
+            /* 宽度和高度 */
+            background-size: 600px;
+            /* 元素宽度的百分比   元素高度的百分比  */
+            background-size: 50% 50%;
+            /* 元素宽度的百分比，高度等比例缩放 */
+            background-size: 50%;
+            /* 图片按照盒子的最长边铺满，为了保证图片不变形，图片会有一部分被截掉 */
+            background-size: cover;
+            /* 图片按照盒子的最短边铺满，为了保证图片不变形，会有一部分留白 */
+            background-size: contain;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

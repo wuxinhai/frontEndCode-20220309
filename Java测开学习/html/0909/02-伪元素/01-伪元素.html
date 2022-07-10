@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        /*
+        伪元素：在元素内部有一前一后两个盒子，就是伪元素，
+        伪元素默认就是行内显示模式，我们可以认为伪元素就是元素中嵌套的元素，
+        伪元素中的文本是不会被搜索引擎抓取到的。
+        */
+        .box{
+            width: 300px;
+            height: 300px;
+            background: pink;
+            overflow: hidden;
+        }
+        .box::before{
+            /* 必写项 */
+            content: "我是before";
+            background: yellowgreen;
+            width: 100px;
+            height: 100px;
+            display: block;
+            margin: 50px auto;
+        }
+        .box::after{
+            content: "我是after";
+            width: 100px;
+            height: 100px;
+            background: blue;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <span>我是box</span>
+    </div>
+</body>
+</html>

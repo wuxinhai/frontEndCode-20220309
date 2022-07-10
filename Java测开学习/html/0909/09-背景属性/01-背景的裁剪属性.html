@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        .box{
+            width: 300px;
+            height: 300px;
+            background: pink url(./222.jpg) 0 0;
+            /* 背景裁剪属性:
+            border-box(默认值)  从边框区域可见
+            padding-box         从padding区域可见
+            content-box         从content区域可见
+            */
+            background-clip: content-box;
+            margin: 100px auto;
+            padding: 50px;
+            border: 50px solid rgba(0, 0, 255, .3);
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

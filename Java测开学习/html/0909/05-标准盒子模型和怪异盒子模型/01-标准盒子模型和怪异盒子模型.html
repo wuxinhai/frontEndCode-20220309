@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        /*
+        标准盒子模型：盒子在网页中的尺寸=content+padding+border，
+                当盒子设置padding设置border后盒子的尺寸会变大。
+        怪异盒子模型：盒子在网页中的尺寸=content+padding+border，
+                当盒子设置padding设置border后盒子的尺寸不会变大，
+                会从content区域自动减去，保证设置的width和height的值一样。
+                注意：使用怪异模型一定要设置width和height。
+        */
+        .one{
+            width: 200px;
+            height: 200px;
+            background: pink;
+            margin: 0 auto;
+            padding: 10px;
+            border: 10px solid red;
+            /* 标准盒子模型 */
+            box-sizing: content-box;
+        }
+        .two{
+            width: 200px;
+            height: 200px;
+            background: pink;
+            margin: 0 auto;
+            padding: 10px;
+            border: 10px solid red;
+            /* 怪异盒子模型 */
+            box-sizing: border-box;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="one"></div>
+    <div class="two"></div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            height: 3000px;
+        }
+        .one{
+            width: 200px;
+            height: 200px;
+            background: url(./222.jpg) no-repeat 0 0;
+            border: 1px solid #000;
+            /*
+            scroll(默认值)滚动背景,背景图默认在盒子内部的左上,当页面滚动时,盒子会跟着页面向上移动,
+            背景图会跟着盒子移动.
+            fixed:固定背景,背景图永远是浏览器窗口,当页面滚动时,背景图是不动的,给哪个元素设置可该背景图,
+            当元素经过浏览器窗口位置的时候,能看到该图片.
+            */
+            background-attachment: scroll;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+    <div class="one"></div>
+</body>
+</html>

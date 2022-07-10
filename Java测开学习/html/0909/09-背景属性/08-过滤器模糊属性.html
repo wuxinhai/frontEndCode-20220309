@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        .box{
+            width: 300px;
+            height: 300px;
+            border: 1px solid #000;
+            position: relative;
+            overflow: hidden;
+        }
+        h5{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            font-size: 30px;
+            color: red;
+        }
+        .box img{
+            /* 过滤器 */
+            filter: blur(10px);
+        }
+        .cover{
+            /* 全屏遮罩 */
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, .5);
+            left: 0;
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="../img/05.jpg" alt="图片加载失败" width="300px" height="300px
+        ">
+        <h5>付费观看</h5>
+        <div class="cover"></div>
+    </div>
+</body>
+</html>
