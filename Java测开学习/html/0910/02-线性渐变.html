@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        /*
+        线性渐变:沿着一条轴线，从一个颜色值逐渐过渡到另一个颜色值，渐变最少是两个颜色
+        */
+        div{
+            width: 300px;
+            height: 300px;
+            /* 
+            方向：
+            单词:
+            to bottom  由上至下
+            to top     由下至上
+            to right   由左至右
+            to left    由右至左
+            to left top 由右下到左上
+            to right top 由左下到右上
+            to left bottom 由右上到左下
+            to right bottom 由左上到右下
+            角度：单位deg
+            正值是顺时针
+            负值是逆时针
+            */
+            /*
+            从0px-50px是red，从50px-100px是red到yellow的渐变，从100px-150px是yellow到blue的渐变，从150px-300px是blue
+            */
+            /* background-image: linear-gradient(to right,red 50px,yellow 100px,blue 150px); */
+            /* background-image: linear-gradient(to right,red 0px,red 50px,yellow 100px,blue 150px,blue 300px); */
+
+            /*
+            从0%-50%是red，从50%-70%是red到yellow的渐变，从70%-90%是yellow到blue的渐变，从90%-100%是blue
+            */
+            /* background-image: linear-gradient(to right,red 50%,yellow 70%,blue 90%); */
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
