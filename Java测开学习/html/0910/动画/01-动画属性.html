@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        .box{
+            width: 300px;
+            height: 30px;
+            background: yellowgreen;
+            margin: 300px auto;
+            /* 动画的单属性 */
+            animation-name: donghua;
+            /* 动画时间 */
+            animation-duration: 5s;
+            /* 动画的方式和过渡一样 */
+            animation-timing-function: linear;
+            /* 动画的方向
+            normal(默认值)：正常
+            reverse：反向  从to到from
+            alternate：有来有去，需要两次
+            alternate-reverse：先反后正，需要两次
+            */
+            animation-direction: normal;
+            animation-direction: reverse;
+            animation-direction: alternate;
+            animation-direction: alternate-reverse;
+            /* 动画的次数 
+            默认一次
+            infinite：持久动画
+            */
+            animation-iteration-count: 2;
+            animation-iteration-count:infinite;
+            /* 动画延时 */
+            animation-delay: 1s;
+            
+            /* 动画复合属性 */
+            /*动画名称  动画时间  动画方式 动画延时 动画方向 动画次数*/
+            animation: donghua 2s ease 1s alternate reverse 1;
+        }
+        /* 定义一个动画：定义一个关键帧区间 */
+        @keyframes donghua {
+            /* 开始 */
+            from{
+                transform: rotate(0deg);
+            }
+            /* 结束 */
+            to{
+                transform: rotate(360deg);
+            } 
+            /* 0%{
+                transform: rotate(0deg);
+            }
+            25%{
+                width: 500px;
+                height: 500px;
+            }
+            50%{
+                background: red;
+                transform: rotate(-720deg);
+            }
+            75%{
+                opacity: .5;
+            }
+            100%{
+                transform: rotate(3600deg);
+            } */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">动画</div>
+</body>
+</html>
