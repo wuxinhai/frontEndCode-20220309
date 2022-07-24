@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        /*
+        2d转换：
+        位移：水平  正值向右，负值向左
+              垂直  正值向下，负值向上
+        */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div:nth-child(1){
+            width: 200px;
+            height: 200px;
+            background: red;
+            /* 水平,垂直 */
+            /* 自身宽度百分比，自身高度百分比 */
+            transform: translate(50%,50%);
+        }
+        div:nth-child(2){
+            width: 200px;
+            height: 200px;
+            background: yellow;
+            /* 水平,垂直 */
+            /* transform: translate(100px,100px); */
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <div></div>
+</body>
+</html>

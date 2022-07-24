@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        body{
+            background: #ccc;
+        }
+        img{
+            display: block;
+        }
+        .box{
+            width: 700px;
+            height: 300px;
+            /* background: pink; */
+            margin: 100px auto;
+        }
+        .box ul li{
+            width: 220px;
+            height: 300px;
+            background: #fff;
+            float: left;
+            margin-right: 10px;
+            overflow: hidden;
+            position: relative;
+        }
+        .box ul li a{
+            display: block;
+            height: 100%;
+            text-decoration: none;
+            text-align: center;
+            color: #333;
+            position: relative;
+            transition: all .5s;
+        }
+        .box ul li a p{
+            margin-top: 10px;
+        }
+        .box ul li a h3{
+            transition: all .5s;
+        }
+        .box ul li a span{
+            position: absolute;
+            left: 0;
+            bottom: -40px;
+            height: 40px;
+            width: 100%;
+            background: orange;
+            color: #fff;
+            font-size: 30px;
+            text-align: center;
+            line-height: 40px;
+            transition: all .5s;
+        }
+        .box ul li:hover a span{
+            bottom: 0px;
+        }
+        .box ul li:hover a h3{
+            text-shadow: 1px 1px 1px yellowgreen;
+        }
+        .box ul li:hover{
+            box-shadow: 0 15px 30px rgba(0, 255, 0, .5);
+            top: 1px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <ul>
+            <li>
+                <a href="##">
+                    <img src="5.jpg" alt="图片加载失败">
+                    <h3>小米耳麦</h3>
+                    <p>12:00开始抢购</p>
+                    <span>图片说明</span>
+                </a>
+            </li>
+            <li>
+                <a href="##">
+                    <img src="5.jpg" alt="图片加载失败">
+                    <h3>小米耳麦</h3>
+                    <p>12:00开始抢购</p>
+                    <span>图片说明</span>
+                </a>
+            </li>
+            <li>
+                <a href="##">
+                    <img src="5.jpg" alt="图片加载失败">
+                    <h3>小米耳麦</h3>
+                    <p>12:00开始抢购</p>
+                    <span>图片说明</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

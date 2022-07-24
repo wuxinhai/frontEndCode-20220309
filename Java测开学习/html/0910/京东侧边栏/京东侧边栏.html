@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        body{
+            height: 3000px;
+        }
+        .box{
+            position: fixed;
+            right: 0;
+            top: 50%;
+            transform: translate(0,-50%);
+        }
+        .box ul li{
+            width: 40px;
+            height: 40px;
+            /* background: pink; */
+            margin-bottom: 10px;
+            position: relative;
+            font-size: 14px;
+            color: #fff;
+        }
+        .box ul li span{
+            width: 72px;
+            height: 40px;
+            line-height: 40px;
+            background: #333;
+            position: absolute;
+            left: 0;
+            top: 0;
+            border-radius: 5px 0 0 5px;
+            padding-left: 15px;
+            transition: left 1.5s;
+        }
+        .box ul li i{
+            width: 40px;
+            height: 40px;
+            background: #333 url(../img/i1.png) no-repeat center center;
+            position: absolute;
+            left: 0;
+            top: 0;
+            border-radius: 5px;
+
+        }
+        .box ul li:nth-of-type(2) i{
+            background-image: url(../img/i2.png);
+        }
+        .box ul li:nth-of-type(3) i{
+            background-image: url(../img/i3.png);
+        }
+        .box ul li:hover i{
+            background-color: darkred;
+            /* 图标的盒子有来无去 */
+            transition: all 1.5s;
+        }
+        .box ul li:hover span{
+            background-color: darkred;
+            /* 只有left有过渡 */
+            left: -80px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <ul>
+            <li>
+                <span>购物车</span>
+                <i></i>
+            </li>
+            <li>
+                <span>购物车</span>
+                <i></i>
+            </li>
+            <li>
+                <span>购物车</span>
+                <i></i>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

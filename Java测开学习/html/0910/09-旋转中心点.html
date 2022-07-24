@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        .box{
+            width: 280px;
+            height: 330px;
+            border: 1px solid red;
+            margin: 200px auto;
+        }
+        .box img{
+            transition: all 1s;
+            /*旋转中心设置  水平和垂直组合
+            单词
+                水平：left/center/right
+                垂直：top/center/bottom
+            数值:水平  垂直
+                transform-origin: 50px 50px;
+            沿着z轴旋转有无数个中心点
+            沿着x轴旋转，旋转中心点在y轴上
+            沿着y轴旋转，旋转中心点在x轴上
+            */
+            transform-origin: left top;
+        }
+        .box:hover img{
+            /* 旋转 单位:deg角度 
+            rotate(720deg)：沿着z轴旋转，正值是顺时针旋转，负值是逆时针旋转
+            rotateX(720deg)：沿着x轴旋转，从右往左看，正值是顺时针旋转，负值是逆时针旋转
+            rotateY(720deg)：沿着y轴旋转，从下往上看，正值是顺时针旋转，负值是逆时针旋转
+            */
+            /* transform: rotate(720deg); */
+            /* transform: rotateX(720deg); */
+            transform: rotateY(720deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="./img/fengche.png" alt="图片加载失败">
+    </div>
+</body>
+</html>
