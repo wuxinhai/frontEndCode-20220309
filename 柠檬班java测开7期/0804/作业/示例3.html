@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单元素</title>
+</head>
+<body>
+    <form action="api/employee/save" method="post">
+        <table>
+            <caption><b>员工等级表</b></caption>
+            <tr>
+                <td>姓名</td>
+                <td>
+                    <input type="text" id="txtName" name="name" placeholder="请输入姓名"/>
+                </td>
+            </tr>
+            <tr>
+                <td>年龄</td>
+                <td>
+                    <input type="number" id="txtAge" name="age" min="0" value="18"/>
+                </td>
+            </tr>
+            <tr>
+                <td>性别</td>
+                <td>
+                    <input type="radio" name="sex" id="rdoMale" value="male" checked /><label for="rdoMale">男</label>
+                    <input type="radio" name="sex" id="rdoFeMale" value="female" checked /><label for="rdoFeMale">女</label>
+                </td>
+            </tr>
+            <tr>
+                <td>业余爱好</td>
+                <td>
+                    <input type="checkbox" name="hobby" value="read" id="chkRead"><label for="rdoMale">读书</label>
+                    <input type="checkbox" name="hobby" value="internet" id="chkInternet"><label for="chkInternet">上网</label>
+                    <input type="checkbox" name="hobby" value="movie" id="chkMovie"><label for="chkMovie">看电影</label>
+                    <input type="checkbox" name="hobby" value="other" id="chkOther"><label for="chkOther">其他</label>
+                </td>
+            </tr>
+            <tr>
+                <td>所在部门</td>
+                <td>
+                    <select name="depName" id="depTxt">
+                        <option value="js">技术部</option>
+                        <option value="cw">财务部</option>
+                        <option value="rs">人事部</option>
+                        <option value="qt">其它</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>照片</td>
+                <td>
+                    <input type="file" name="photo" id="photoTxt" placeholder="请选择文件上传"/>
+                </td>
+                
+            </tr>
+            <tr>
+                <td>自我评价</td>
+                <td>
+                    <textarea name="desc" id="txtDesc" cols="30" rows="10" placeholder="请输入自我评价,如：我是一个乐观、开朗的人，也是一个脱离低级趣味的人。"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" name="sub" id="subTxt" value="提交"/>
+                    <input type="reset" name="res" id="resTxt" value="重置"/>
+                    <input type="button" name="but" id="butTxt" value="普通按钮" onclick="alert('你好')" 、>
+                </td>
+            </tr>
+        </table>
+        <h1>------其他表单元素------</h1>
+        <label for="foods">喜欢的食物</label>
+        <input type="text" list="foods" name="foods" id="txtFood">
+        <datalist id="foods">
+            <option value="米饭"></option>
+            <option value="饺子"></option>
+            <option value="面包"></option>
+            <option value="包子"></option>
+            <option value="面条"></option>
+        </datalist>
+        <progress id="prgFileStatus" name="fileStatus" max="100" value="70">70%</progress>
+    </form>
+</body>
+</html>

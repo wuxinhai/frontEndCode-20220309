@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>示例1的标题</title>
+    <script type="text/javascript">
+        var color = ["red","green","blue"];
+        var index = 0;
+        setInterval(function() {
+            document.getElementById("dvContent").style.backgroundColor = color [(index++)%3];
+        },1000)
+    </script>
+    <style type="text/css">
+        div{
+            margin: 0 auto;
+            text-align: center;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            background: red;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>示例1</h1>
+        <div id ="dvContent" class="box"></div>
+    </div>
+</body>
+</html>
