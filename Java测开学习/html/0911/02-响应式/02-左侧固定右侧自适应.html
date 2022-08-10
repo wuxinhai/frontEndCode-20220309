@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            height: 600px;
+            background: #ccc;
+        }
+        .left{
+            width: 200px;
+            height: 600px;
+            background: yellow;
+            float: left;
+            margin-left: -100%;
+        }
+        .right{
+            width: 100%;
+            height: 600px;
+            background: yellowgreen;
+            float: left;
+        }
+        .content{
+            /* 块元素的特征：
+                1.块元素的宽度和父元素一样宽
+                2.在不设置宽度的情况下加宽度会自动减去
+            */
+            padding-left: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="right">
+            <div class="content">右</div>
+        </div>
+        <div class="left">左</div>
+    </div>
+</body>
+</html>
