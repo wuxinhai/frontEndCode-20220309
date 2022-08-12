@@ -13,6 +13,16 @@
             outline: 5px dashed blue;
             border-radius: 10px;
         }
+        a{
+            color: pink;
+            font-size: 12px;
+        }
+        a:hover{
+            color: yellow;
+        }
+        a:visited{
+            color: yellowgreen;
+        }
     </style>
 </head>
 <body>
@@ -37,9 +47,198 @@
         <div style="width: 200px;height:200px;background-color: green;border: 2px solid yellow;">background-color</div>
         <div style="width: 200px;height:200px;background-image: url(./images/lemon.png);background-repeat: repeat;border: 2px solid yellow;">background-image-repeat</div>
         <div style="width: 200px;height:200px;background-image: url(./images/lemon.png);background-repeat: no-repeat;border: 2px solid yellow;">background-image-no-repeat</div>
-        
-
+        <div style="width: 200px;height:200px;background-image: url(./images/lemon.png);background-attachment: scroll;border: 2px solid yellow;overflow: scroll;">
+            <div style="width:300px;">
+                background-attachment-scroll
+            </div>
+            <div style="width:300px;">
+                background-attachment-scroll
+            </div>
+            <div style="width:300px;">
+                background-attachment-scroll
+            </div>
+            <div style="width:300px;">
+                background-attachment-scroll
+            </div>
+            <div style="width:300px;">
+                background-attachment-scroll
+            </div>
+            <div style="width:300px;">
+                background-attachment-scroll
+            </div>
+            <div style="width:300px;">
+                background-attachment-scroll
+            </div>
+            <div style="width:300px;">
+                background-attachment-scroll
+            </div>
+            <div style="width:300px;">
+                background-attachment-scroll
+            </div>
+            <div style="width:300px;">
+                background-attachment-scroll
+            </div>
+            <div style="width:300px;">
+                background-attachment-scroll
+            </div>
+            <div style="width:300px;">
+                background-attachment-scroll
+            </div>
+            <div style="width:300px;">
+                background-attachment-scroll
+            </div>
+        </div>
+        <div style="width: 200px;height:200px;background-image: url(./images/lemon.png);background-repeat: no-repeat;background-attachment: fixed;border: 2px solid yellow;overflow: scroll;">
+            <div style="width:300px;">
+                需要滚动查看效果
+            </div>
+            <div style="width:300px;">
+                background-attachment-fixed
+            </div>
+            <div style="width:300px;">
+                background-attachment-fixed
+            </div>
+            <div style="width:300px;">
+                background-attachment-fixed
+            </div>
+            <div style="width:300px;">
+                background-attachment-fixed
+            </div>
+            <div style="width:300px;">
+                background-attachment-fixed
+            </div>
+            <div style="width:300px;">
+                background-attachment-fixed
+            </div>
+            <div style="width:300px;">
+                background-attachment-fixed
+            </div>
+            <div style="width:300px;">
+                background-attachment-fixed
+            </div>
+            <div style="width:300px;">
+                background-attachment-fixed
+            </div>
+            <div style="width:300px;">
+                background-attachment-fixed
+            </div>
+            <div style="width:300px;">
+                background-attachment-fixed
+            </div>
+            <div style="width:300px;">
+                background-attachment-fixed
+            </div>
+            <div style="width:300px;">
+                background-attachment-fixed
+            </div>
+        </div>
+        <div style="width: 200px;height:200px;background-image: url(./images/lemon.png);background-repeat: no-repeat;background-attachment: local;border: 2px solid yellow;overflow: scroll;">
+            <div style="width:300px;">
+                background-attachment-local
+            </div>
+            <div style="width:300px;">
+                background-attachment-local
+            </div>
+            <div style="width:300px;">
+                background-attachment-local
+            </div>
+            <div style="width:300px;">
+                background-attachment-local
+            </div>
+            <div style="width:300px;">
+                background-attachment-local
+            </div>
+            <div style="width:300px;">
+                background-attachment-local
+            </div>
+            <div style="width:300px;">
+                background-attachment-local
+            </div>
+            <div style="width:300px;">
+                background-attachment-local
+            </div>
+            <div style="width:300px;">
+                background-attachment-local
+            </div>
+            <div style="width:300px;">
+                background-attachment-local
+            </div>
+            <div style="width:300px;">
+                background-attachment-local
+            </div>
+            <div style="width:300px;">
+                background-attachment-local
+            </div>
+            <div style="width:300px;">
+                background-attachment-local
+            </div>
+        </div>
+        <!-- 背景图位置 -->
+        <div style="width: 200px;height:200px;background-image: url(./images/lemon.png);background-repeat: no-repeat;background-position: bottom right;border: 2px solid yellow;overflow: scroll;">background-position</div>
+        <!-- background复合属性 -->
+        <div style="width: 200px;height:200px;background: green url(./images/lemon.png) no-repeat right top;">background简写</div>
     </div>
-
+    <hr>
+    <div class="box1">
+        <h1>【位置】</h1>
+        <div style="width:200px;height:200px;background: yellow;">
+            <span style="background-color: green;">外层div文本内容</span>
+            <div style="background-color: green;">static，默认值</div>
+            <div style="background-color: green;position: absolute;left: 50px;top: 50px;">absolute,页面根元素绝对位置</div>
+            <div style="background-color: green;position: fixed;left: 150px;top: 100px;">fixed，浏览器容器固定位置</div>
+            <div style="background-color: green;position: relative;left: 0px;top: 90px;">relative，相对于所在父元素</div>
+        </div>
+    </div>
+    <hr>
+    <div>
+        <h1>【外边距与内边距】</h1>
+        <div style="width: 200px;height:200px;background-color: yellow;overflow: hidden;">
+            <div style="width:100px;height:100px;border: 5px solid red;background-color: yellowgreen;margin: 20px 5px 10px 30px;padding: 5px 5px 5px 5px;">
+                <span style="background-color: pink;">++++++++</span>
+                <span style="background-color: pink;">内部文本</span>
+                <span style="background-color: pink;">++++++++</span>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div>
+        <h1>【字体】</h1>
+        <span style="font-size: 30px;font-family: '宋体';"></span>
+    </div>
+    <hr>
+    <div>
+        <h1>【链接】</h1>
+        <a href="##" target="_blank">链接1</a>
+        <a href="##" target="_blank">链接2</a>
+        <a href="##" target="_blank">链接3</a>
+    </div>
+    <hr>
+    <div>
+        <h1>【display】<span style="color: pink;">【扩展】</span></h1>
+        <ul>
+            <li>HTML</li>
+            <li>HTML</li>
+            <li>HTML</li>
+        </ul>
+        <ul>
+            <li style="display: inline-block;">HTML</li>
+            <li style="display: inline-block;">HTML</li>
+            <li style="display: inline-block;">HTML</li>
+        </ul>
+        <span style="color: green;">没有设置display，行级标签不会换行。 </span>
+        <span style="color: pink;">没有设置display，行级标签不会换行。 </span>
+        <span style="color: red;display: block;">没有设置display，行级标签不会换行。 </span>
+        <span style="color: green;">两标签间的换行。</span>
+        <div>a</div>
+        <div style="display: none;">不显示的内容，display:none</div>
+        <div>b</div>
+        <div>a</div>
+        <div style="visibility: hidden;">不显示的内容，visibility:hidden</div>
+        <div>d</div>
+    </div>
+    <hr>
+    <div>
+        <h1>【overflow】<span style="color: aqua;">【扩展】</span></h1>
+    </div>
 </body>
 </html>
