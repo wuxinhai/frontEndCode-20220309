@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>字符串与运算符</title>
+    <script type="text/javascript">
+        /* 加载数据函数，在页面加载时进行处理（此时HTML元素已经加载完成） */
+        function loadData(){
+            //使用字符串函数
+            var originalString = " There is a flower in the \'tree\".\\    ";
+            var trimString = originalString.trim();
+            var indexOfString = originalString.indexOf("re"); //.indexOf("re",5),5表示开始位置;lastIndexOf("re")表示从尾部开始
+            var splitString = originalString.split(" ");
+            var replaceString = originalString.replace(" ","_");
+            var replaceAllString = originalString.replaceAll(" ","-");
+            var substrString = originalString.substr(4,5);
+            var substringString = originalString.substring(4,5);
+            var toLowerCaseString = originalString.toLowerCase();
+            var toUpperCaseString = originalString.toUpperCase();
+            //设置值
+            document.getElementById("spnOriginal").innerText = originalString + "(长度:" + originalString.length + ")";
+            document.getElementById("spnTrim").innerText = trimString + "(长度:" + trimString.length +")";
+            document.getElementById("spnIndexOf").innerText = indexOfString;
+            document.getElementById("spnsSplit").innerText = splitString;
+            document.getElementById("spnReplace").innerText = replaceString;
+            document.getElementById("spnReplaceAll").innerText = replaceAllString;
+            document.getElementById("spnSubstr").innerText = substrString;
+            document.getElementById("spnSubString").innerText = substringString;
+            document.getElementById("spnLowerCase").innerText = toLowerCaseString;
+            document.getElementById("spnUpperCase").innerText = toUpperCaseString;
+
+            document.getElementById("spnEquals").innerText = ("3"==3);
+            document.getElementById("spnFullEquals").innerText = ("3"===3);
+            document.getElementById("spnNotEquals").innerText = ("4"!=4);
+            document.getElementById("spnFullNotEquals").innerText = ("4"!==4);
+        }
+    </script>
+</head>
+<body onload="loadData()">
+    原始串:<span id="spnOriginal" style="background-color: green;"></span><br>
+    trim值:<span id="spnTrim" style="background-color: green;"></span><br>
+    indexOf("er")值:<span id="spnIndexOf"></span><br>
+    split(" ")后值:<span id="spnsSplit"></span><br>
+    replace(" ","_")值:<span id="spnReplace"></span><br>
+    replaceAll(" ","_")值:<span id="spnReplaceAll"></span><br>
+    substr(4,5)值:<span id="spnSubstr"></span><br>
+    substring(4,5)值:<span id="spnSubString"></span><br>
+    toLowerCase值:<span id="spnLowerCase"></span><br>
+    toUpperCase值:<span id="spnUpperCase"></span><br>
+    <hr>
+    "3"==3?<span id="spnEquals"></span><br>
+    "3"==3?<span id="spnFullEquals"></span><br>
+    "4"!==4?<span id="spnNotEquals"></span><br>
+    "4"!==4?<span id="spnFullNotEquals"></span><br>
+</body>
+</html>

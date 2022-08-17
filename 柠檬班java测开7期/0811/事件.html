@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>事件</title>
+    <script type="text/javascript">
+        //页面加载
+        function init(){
+            alert("页面加载。");
+            /*属性绑定*/
+            document.getElementById("btnPropertyValue").onclick = function(){
+                alert("通过HTML属性赋值处理事件");
+            }
+            /*事件监听*/
+            document.getElementById("btnListener").addEventListener("click",function(){
+                alert("通过HTML事件监听处理事件");
+            });
+        }
+        //姓名变化
+        function changeName(){
+            document.getElementById("spnName").innerText = "你输入的姓名是："+document.getElementById("txtName").value;
+        }
+        //昵称按键
+        function keyNickName(event){
+            alert('你按下的键值是:'+event.keyCode)
+        }
+    </script>
+</head>
+<body onload="init();">
+    <!-- 【onchange事件】 -->
+    <h1>--【onchange事件】--</h1>
+    <h1>
+        姓名:<input type="text" id="txtName" onchange="changeName();" value="张三"/>
+        <span id="spnName"></span>
+        <br>
+        你喜欢的宠物:<select id="sltAnimal" onchange="alert('你喜欢的宠物是:'+this.value);">
+            <option value="狗">狗</option>
+            <option value="猫">猫</option>
+            <option value="鸟">鸟</option>
+            <option value="其它">其它</option>
+        </select>
+    </h1>
+    <hr>
+    <h1>--【onclick事件（属性绑定）】--</h1>
+    <input type="button" onclick="alert('通过HTML属性绑定处理事件。');" value="属性绑定">
+    <hr>
+    <h1>--【onclick事件（属性赋值）】--</h1>
+    <input id="btnPropertyValue" type="button" value="事件赋值">
+    <hr>
+    <h1>--【onclick事件（事件监听）】--</h1>
+    <input id="btnListener" type="button" value="事件监听">
+    <hr>
+    <h1>--【onmouseover+onmouseout事件】--</h1>
+    <img src="./images/lemon.png" style="opacity: 0.4;" onmouseover="this.style.opacity=1;" onmouseout="this.style.opacity=0.4;">
+    <hr>
+    <h1>--【onkeydown事件】--</h1>
+    昵称:<input type="text" id="txtNickName" onkeydown="keyNickName(event);">
+    <hr>
+</body>
+</html>

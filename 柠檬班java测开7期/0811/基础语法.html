@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>基础语法</title>
+    <script type="text/javascript">
+        //改变内容
+        function changeContent(){
+            document.getElementById("h2Content").innerHTML="<span style='color:yellow'>我是</span>改变后的内容"
+        }
+        //改变样式
+        function changeStyle(){
+            document.getElementById("h3Content").style.color="blue";
+            document.getElementById("h3Content").style.fontSize="30px";
+        }
+        /*
+        验证表单输入值
+		姓名不能为空
+        */
+       function validateData(){
+            var result = true;
+            var name = document.getElementById("txtName").value.trim();
+            if(name==""){
+                result = false;
+            }
+            if(result==false){
+                alert("输入项不能为空!");
+            }
+            return result;
+       }
+    </script>
+    <script type="text/javascript" src="./demo.js"></script>
+    <script type="text/javascript">
+        setTimeout(function(){
+            document.getElementById("dvInner").innerText = document.getElementById("dvInner").innerText + "追加内容!"
+        },2000);
+    </script>
+    <script type="text/javascript" src="base.js"></script>
+</head>
+<body>
+    <h1>--【改变内容】--</h1>
+    <h2 id="h2Content">
+        改变前的内容。
+        <span>改变前的子内容。</span>
+    </h2>
+    <input type="button" value="改变内容" onclick="changeContent()">
+    <hr>
+    <h1>--【改变样式】--</h1>
+    <h3 id="h3Content" style="color: red;">
+        展示样式改变。
+    </h3>
+    <input type="button" value="改变样式" onclick="changeStyle()">
+    <hr>
+    <h1>--【表单验证】--</h1>
+    <form action="api/employee/save" method="post" onsubmit="return validateData()">
+        姓名：<input type="text" id="txtName"/>
+        <br>
+        <input type="submit" value="提交"/>
+    </form>
+    <hr>
+    <h1>--【调用外部js方法】--</h1>
+    <input type="button" value="调用外部方法" onclick="outCode()">
+    <hr>
+    <h1>--【其他示例】--</h1>
+    <div id="dvInner">初始内容。</div>
+    <div id="dvContent" style="width:200px;height:200px;background-color:blue;border:3px solid yellow;"></div>
+    <input type="button" value="开始随机颜色" onclick="startRandomColor()">
+    <input type="button" value="结束随机颜色" onclick="stopRandomColor()">
+</body>
+</html>
