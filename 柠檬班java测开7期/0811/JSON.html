@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON</title>
+    <script>
+        //定义JavaScript对象,部分是单引号
+        var department = {
+            "departmentID":1,
+            "departmentName":"财务部",
+            "employees":[
+                {
+                    "employeeID":1,
+                    "employeeName":"张三",
+                    "sex":"男"
+                },
+                {
+                    "employeeID":2,
+                    "employeeName":"李四",
+                    "sex":"男"
+                },
+                {
+                    "employeeID":3,
+                    "employeeName":"王五",
+                    "sex":"女"
+                }
+            ]
+        };
+        //输出对象
+        console.log("对象输出:");
+        console.log(department);
+        console.log("对象属性输出:");
+        console.log(department.employees[1].employeeName);
+        var departmentStr = JSON.stringify(department); //JavaScript对象转JSON字符串
+        console.log("对象字符串形式输出:");
+        console.log(departmentStr);
+        var emp = '{"empName":"jackma","age":18}';  //JSON字符串
+        console.log("字符串转对象后输出:");
+        console.log(JSON.parse(emp));
+        //console日志输出
+        console.log("日志信息。");
+        console.debug("调试信息。");
+        console.error("错误信息。");
+        console.info("普通信息。");
+        console.warn("警告信息。");
+        console.assert("断言信息。");
+        //console.clear("清空信息。");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
