@@ -6,17 +6,35 @@
   <router-view/>
   <!-- 3.使用 -->
   <my-component/>
+  <ValueSrc/>
+  <ComputtedSrc/>
+  <CssSrc/>
+  <Condition/>
+  <ListSrc/>
+  <Lifecycle/>
 </template>
 
 <script>
 //1.引入
-import MyComponent from '@/components/MyComponent.vue'
+import MyComponent from '@/components/MyComponent.vue';
+import ValueSrc from './components/ValueSrc.vue';
+import ComputtedSrc from './components/ComputtedSrc.vue';
+import CssSrc from './components/CssSrc.vue';
+import Condition from './components/Condition.vue';
+import ListSrc from './components/List.vue';
+import Lifecycle from './components/Lifecycle.vue';
 export default{
   name:'APP',
   components:{
     //2.声明
-    MyComponent
-  }
+    MyComponent,
+    ValueSrc,
+    ComputtedSrc,
+    CssSrc,
+    Condition,
+    ListSrc,
+    Lifecycle
+}
 }
 </script>
 
