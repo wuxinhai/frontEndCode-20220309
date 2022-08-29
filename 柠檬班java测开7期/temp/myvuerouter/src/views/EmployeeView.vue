@@ -67,14 +67,16 @@ export default {
         return{
             //定义了对象，并设置了初值
             employee:{
-                name:'张三',
-                age:24,
-                sex:'female',
-                hobby:['read','movie'],
-                dept:'js',
-                photo:'',
-                desc:'我的是一个特别的人'
+            },
+            //省
+            provinces:[{
+                provincesId:1,
+                provinceName:'湖南省'
+            },{
+                provincesId:2,
+                provinceName:'广东省'
             }
+        ]
         }
     },
     created(){
